@@ -1290,12 +1290,6 @@ html {
     width: 125rem;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #cta:after {
-    display: none;
-  }
-}
 /*-- -------------------------- -->
 <---           Footer           -->
 <--- -------------------------- -*/
@@ -1499,11 +1493,5 @@ html {
   }
   #footer .credit .copyright {
     display: inline-block;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #footer {
-    background: #061623;
   }
 }
