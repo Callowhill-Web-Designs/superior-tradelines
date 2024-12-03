@@ -94,14 +94,14 @@
                                     {% for child in entry.children %}
                                     {# Replace href="{{ child.url }}" #}
                                         <li class="cs-drop-li">
-                                            <a href="" class="cs-li-link cs-drop-link">{{ child.key }}</a>
+                                            <a href="{{ child.url }}" class="cs-li-link cs-drop-link">{{ child.key }}</a>
                                         </li>
                                     {% endfor %}
                                 </ul>
                             {% else %}
                                 {# Normal pages are rendered as <a> tags, in the normal way you'd expect #}
                                     {# Replace href="{{ entry.url }}" #}
-                                <a href="" class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}" {% if entry.url == page.url %} aria-current="page" {% endif %}>
+                                <a href="{{ entry.url }}" class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}" {% if entry.url == page.url %} aria-current="page" {% endif %}>
                                     {{ entry.key }}
                                 </a>
                             {% endif %}
