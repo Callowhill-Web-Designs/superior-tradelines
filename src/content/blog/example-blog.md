@@ -7,7 +7,7 @@ date: 2024-12-01T12:00:00.000Z
 tags:
   - post
   - featured
-image: /assets/images/blog/zadeheadshot.png
+image: /assets/images/blog/pexels-photo-351264.jpeg
 imageAlt: Example Image Caption
 ---
 # Heading1
@@ -22,9 +22,8 @@ imageAlt: Example Image Caption
 
 ###### Heading6
 
-This is Zade. My, my isn't he handsome!\
+This is a sample post\
 This is [a link](https://www.callowhillwebdesigns.com)
-
 
 > This is a quote
 
