@@ -740,6 +740,7 @@
     padding: var(--sectionPadding);
     position: relative;
     overflow: hidden;
+    background-color: #f7f7f7;
   }
   #faq-1466 .cs-container {
     width: 100%;
