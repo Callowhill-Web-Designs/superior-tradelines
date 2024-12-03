@@ -1,8 +1,8 @@
 module.exports = {
     "name": "Superior Tradelines",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
+    "email": "email@emailprovider.com",
+    "phoneForTel": "123-456-7890",
+    "phoneFormatted": "(123) 456-7890",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
