@@ -811,15 +811,16 @@
   }
 }
 /*-- -------------------------- -->
-<---   Side By Side Reverse     -->
+<---       Side By Side         -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbsr-1444 {
+  #sbs-1443 {
     padding: var(--sectionPadding);
     overflow: hidden;
+    background-color: #f7f7f7;
   }
-  #sbsr-1444 .cs-container {
+  #sbs-1443 .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 34.375rem;
@@ -831,7 +832,7 @@
     gap: clamp(3rem, 6vw, 4rem);
     position: relative;
   }
-  #sbsr-1444 .cs-content {
+  #sbs-1443 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -841,13 +842,13 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #sbsr-1444 .cs-text {
+  #sbs-1443 .cs-text {
     margin-bottom: 1rem;
   }
-  #sbsr-1444 .cs-text:last-of-type {
+  #sbs-1443 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbsr-1444 .cs-card-group {
+  #sbs-1443 .cs-card-group {
     width: 100%;
     max-width: 39.375rem;
     margin: 0 0 2rem 0;
@@ -857,7 +858,7 @@
     flex-direction: column;
     gap: 1.5rem;
   }
-  #sbsr-1444 .cs-li {
+  #sbs-1443 .cs-li {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -867,7 +868,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 2.5vw, 1.25rem);
   }
-  #sbsr-1444 .cs-li-picture {
+  #sbs-1443 .cs-li-picture {
     width: 5rem;
     height: 5rem;
     margin: 0;
@@ -882,7 +883,7 @@
     position: relative;
     z-index: 1;
   }
-  #sbsr-1444 .cs-li-picture:before {
+  #sbs-1443 .cs-li-picture:before {
     content: '';
     width: 100%;
     height: 100%;
@@ -894,12 +895,12 @@
     left: 0;
     z-index: -1;
   }
-  #sbsr-1444 .cs-li-icon {
+  #sbs-1443 .cs-li-icon {
     width: 2rem;
     height: auto;
     display: block;
   }
-  #sbsr-1444 .cs-h3 {
+  #sbs-1443 .cs-h3 {
     font-size: 1.25rem;
     line-height: 1.2em;
     font-weight: 700;
@@ -907,14 +908,14 @@
     margin: 0 0 0.75rem 0;
     color: var(--headerColor);
   }
-  #sbsr-1444 .cs-li-text {
+  #sbs-1443 .cs-li-text {
     font-size: 1rem;
     line-height: 1.5em;
     text-align: left;
     margin: 0;
     color: var(--bodyTextColor);
   }
-  #sbsr-1444 .cs-button-solid {
+  #sbs-1443 .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -933,7 +934,7 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
-  #sbsr-1444 .cs-button-solid:before {
+  #sbs-1443 .cs-button-solid:before {
     content: '';
     position: absolute;
     height: 100%;
@@ -946,10 +947,10 @@
     border-radius: 0.25rem;
     transition: width 0.3s;
   }
-  #sbsr-1444 .cs-button-solid:hover:before {
+  #sbs-1443 .cs-button-solid:hover:before {
     width: 100%;
   }
-  #sbsr-1444 .cs-picture {
+  #sbs-1443 .cs-picture {
     width: 100%;
     max-width: 40.625rem;
     min-height: 22.625rem;
@@ -960,7 +961,7 @@
     position: relative;
     z-index: 1;
   }
-  #sbsr-1444 .cs-picture img {
+  #sbs-1443 .cs-picture img {
     width: 100%;
     height: 100%;
     display: block;
@@ -972,21 +973,19 @@
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #sbsr-1444 .cs-container {
+  #sbs-1443 .cs-container {
     max-width: 80rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
     position: relative;
   }
-  #sbsr-1444 .cs-content {
+  #sbs-1443 .cs-content {
     width: 50%;
     padding: 2.5rem 0;
   }
-  #sbsr-1444 .cs-picture {
+  #sbs-1443 .cs-picture {
     height: auto;
     width: 55%;
-    /* sends it to the right in the 2nd position */
-    order: 2;
   }
 }
