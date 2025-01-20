@@ -3,10 +3,8 @@ title: Canitiem Saxa
 url: canitiem-saxa
 description: Lorem markdownum trabeati dicere deus.
 author: Zade Dohan
-date: 2023-06-08T15:28:08.486Z
-tags:
-  - post
-  - featured
+date: 2000-01-20T07:00:00.000Z
+tags: []
 image: /assets/images/blog/hero-lp-full.webp
 imageAlt: Kitchen
 ---

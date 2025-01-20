@@ -38,9 +38,9 @@ eleventyNavigation:
             <!-- Left Image Section -->
             <div class="cs-left">
                 <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/pexels-essow-k-251295-936722.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/pexels-essow-k-251295-936722.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/pexels-essow-k-251295-936722.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                    <source media="(max-width: 600px)" srcset="/assets/images/pexels-umar-mukhtar-703539-1538177.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/pexels-umar-mukhtar-703539-1538177.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/pexels-umar-mukhtar-703539-1538177.jpg" alt="cabinets" loading="lazy" width="400" height="563">
                 </picture>
                 <picture class="cs-picture cs-picture2">
                     <source media="(max-width: 600px)" srcset="/assets/images/pexels-olly-789822.jpg">
@@ -82,60 +82,32 @@ eleventyNavigation:
                 <h2 class="cs-title">Directly from The Latest News and Articles</h2>
             </div>
             <ul class="cs-card-group">
-                <li class="cs-item">
-                    <picture class="cs-picture" aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/non-profit-landscape-one.png">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/non-profit-landscape-one.png">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/non-profit-landscape-one.png" alt="people" width="305" height="180">
-                    </picture>
-                    <span class="cs-date">02 Dec, 2024</span>
-                    <div class="cs-info">
-                        <h3 class="cs-h3">Article 1</h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <a href="" class="cs-link">
-                            Read More
-                            <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
-                        </a>
-                    </div>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture" aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/non-profit-landscape-two.png">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/non-profit-landscape-two.png">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/non-profit-landscape-two.png" alt="people" width="305" height="180">
-                    </picture>
-                    <span class="cs-date">02 Dec, 2024</span>
-                    <div class="cs-info">
-                        <h3 class="cs-h3">Article 2</h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <a href="" class="cs-link">
-                            Read More
-                            <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
-                        </a>
-                    </div>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture" aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/event2.jpg">
-                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/event2.jpg">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/event2.jpg" alt="people" width="305" height="180">
-                    </picture>
-                    <span class="cs-date">02 Dec, 2024</span>
-                    <div class="cs-info">
-                        <h3 class="cs-h3">Article 3</h3>
-                        <p class="cs-item-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <a href="" class="cs-link">
-                            Read More
-                            <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
-                        </a>
-                    </div>
-                </li>
+            {% if collections.post | length == 0 %}
+                <h1>No Recent Posts</h1>
+            {% else %}
+                {% set atPost = 0 %}
+                {%- for post in collections.post | reverse -%}
+                    {% if atPost < 3 %}
+                        <li class="cs-item">
+                            <picture class="cs-picture" aria-hidden="true">
+                                <img loading="lazy" decoding="async" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" width="305" height="180">
+                            </picture>
+                            <span class="cs-date">{{ post.date | postDate }}</span>
+                            <div class="cs-info">
+                                <h3 class="cs-h3">{{ post.data.title }}</h3>
+                                <p class="cs-item-text">
+                                    {{ post.data.description }}
+                                </p>
+                                <a href="{{ post.url }}" class="cs-link">
+                                    Read More
+                                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                                </a>
+                            </div>
+                        </li>
+                    {% endif%}
+                    {% set atPost = atPost + 1 %}
+                {%- endfor -%}
+            {% endif %}
             </ul>
             <button class="cs-button-solid">Discover More</button>
         </div>
