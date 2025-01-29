@@ -1,26 +1,28 @@
-<!-- ---
+---
 title: 'Tradelines | Superior Tradelines'
 description: 'Meta description for the page'
-preloadImg: '\assets\images\pexels-pixabay-302831.jpg'
+preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'tradelines/'
 eleventyNavigation:
-    key: View Tradelines
-    order: 500
---- -->
+    key: Tradelines
+    order: 3100
+    parent: Learn
+---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/tradelines.css">
+    <link rel="stylesheet" href="/assets/css/projects.css">
 {% endblock %}
 
 {% block body %}
+
     <!-- ============================================ -->
     <!--                    LANDING                   -->
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">Available Tradelines</h1>
+        <h1 id="home-h">What Are Tradelines?</h1>
         <picture>
             <source media="(max-width: 600px)" srcset="\assets\images\pexels-pixabay-302831.jpg">
             <source media="(min-width: 601px)" srcset="\assets\images\pexels-pixabay-302831.jpg">
@@ -28,419 +30,194 @@ eleventyNavigation:
         </picture>
     </section>
 
-<!-- ============================================ -->
-<!--                    Table                     -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
 
-<!--
-    To add additional tables, copy and paste the cs-button and change it's data-filter to th next number, in this case it's "seven". Do the same to the cs-table-wrapper and its data-category number. And thats it!
--->
-
-<section id="table-1835">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Tradelines For Sale</span>
-            <h2 class="cs-title">Our Available Tradelines</h2>
-            <div class="cs-button-group">
-                <button class="cs-button cs-active" data-filter="one">
-                    Available Tradelines
-                </button>
-                <button class="cs-button" data-filter="two">
-                    All Tradelines
-                </button>
+    <section id="sbs-1443">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="\assets\images\pexels-mizunokozuki-12903296.jpg">
+                <source media="(min-width: 601px)" srcset="\assets\images\pexels-mizunokozuki-12903296.jpg">
+                <img loading="lazy" decoding="async" src="\assets\images\pexels-mizunokozuki-12903296.jpg" alt="volunteers" width="650" height="600" aria-hidden="true">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-topper">Learn about Tradelines</span>
+                <h2 class="cs-title">What is a Tradeline? Definitions, Examples, and a Guide.</h2>
+                <p class="cs-text">
+                    Have you ever wondered why some people have excellent credit scores while others struggle to get approved for a basic loan or credit card? The answer lies in tradelines.
+                </p>
+                <ul class="cs-card-group">
+                    <li class="cs-li">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">What is a Tradeline?</h3>
+                            <p class="cs-li-text">
+                                A tradeline is simply a credit account that appears on your credit report. It contains detailed information about the account, such as the creditor’s name, the type of account (e.g., credit card, loan), the date it was opened, the credit limit, payment history, and more. Tradelines are the foundation of your credit profile, as they provide lenders with a snapshot of your financial behavior. 
+By adding tradelines to your credit report as an authorized user, you can "borrow" the positive credit history of an account, which may help strengthen your credit profile. This process is particularly effective for individuals looking to improve their credit scores quickly or establish a stronger credit history to qualify for loans, credit cards, or better interest rates.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-li">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">How much will a Tradeline boost my credit?</h3>
+                            <p class="cs-li-text">
+                                Tradelines can have a significant impact on key factors of your credit score, including:
+Credit Age: Adding an aged tradeline can increase the average age of your accounts, which makes up about 15% of your credit score.
+Credit Utilization Ratio: A high-limit tradeline with low utilization can lower your overall credit utilization ratio, which accounts for 30% of your score.
+Payment History: Tradelines with a perfect payment history help demonstrate financial responsibility, contributing to 35% of your credit score.
+However, the impact of a tradeline will depend on the individual’s existing credit profile. It’s crucial to work with a reputable company like Superior Tradelines to ensure the tradeline is effective, appropriate, and handled ethically.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-li">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Why should I choose Superior Tradelines?</h3>
+                            <p class="cs-li-text">
+                                In an industry with many bad players, trust and professionalism matter. Superior Tradelines has been a trusted leader for over 15 years, serving more than 30,000 satisfied clients. We provide tailored solutions, hold your payments in a secure trust account until your tradelines post, and guarantee transparency every step of the way. Our $10,000 surety bond further reinforces our commitment to your peace of mind.
+                            </p>
+                        </div>
+                    </li>
+                </ul>     
+                <a href="/contact" class="cs-button-solid">Schedule a Consultation</a>        
             </div>
         </div>
-        <!--Table 1 - All-->
+    </section>
     
-        <div class="cs-table-wrapper" data-category="one">
-            <table class="cs-table">
-                <thead class="cs-thead">
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="col">Bank</th>
-                        <th class="cs-th" scope="col">Credit Limit</th>
-                        <th class="cs-th" scope="col">Date Opened</th>
-                        <th class="cs-th" scope="col">Purchase Deadline</th>
-                        <th class="cs-th" scope="col">Price</th>
-                        <th class="cs-th" scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody class="cs-tbody">
-                    {% if collections.tradeline | length == 0 %}
-                        <h1>No Available Tradelines At This Time</h1>
-                    {% else %}
-                        {%- for tradeline in collections.tradeline -%}
-                            {% if tradeline.data.available %}
-                                <tr class="cs-tr">
-                                    <th class="cs-th" scope="row">{{ tradeline.data.bankName }}</th>
-                                    <td class="cs-td">{{ tradeline.data.creditLimit }}</td>
-                                    <td class="cs-td">{{ tradeline.data.dateOpened | postDate }}</td>
-                                    <td class="cs-td">{{ tradeline.date | postDate }}</td>
-                                    <td class="cs-td">{{ tradeline.data.price }}</td>
-                                    <td class="cs-td">
-                                        <a class="cs-cta" href="/">Purchase Now</a>
-                                    </td>
-                                </tr>
-                            {% endif %}
-                        {%- endfor -%}
-                    {% endif %}
-                </tbody>
-            </table>
+    <!-- ============================================ -->
+    <!--              Side By Side Reverse            -->
+    <!-- ============================================ -->
+
+    <section id="sbsr-1462">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="\assets\images\pexels-tima-miroshnichenko-7567220.jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\pexels-tima-miroshnichenko-7567220.jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\pexels-tima-miroshnichenko-7567220.jpg" alt="turbine" width="500" height="729" aria-hidden="true">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="\assets\images\pexels-anna-nekrashevich-7552568.jpg">
+                    <source media="(min-width: 601px)" srcset="\assets\images\pexels-anna-nekrashevich-7552568.jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\pexels-anna-nekrashevich-7552568.jpg" alt="windmill" width="378" height="460" aria-hidden="true">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">Welcome to Superior Tradelines</span>
+                <h2 class="cs-title">Why We Stand Out Among Tradeline Vendors</h2>
+                <p class="cs-text">
+                    When it comes to credit enhancement, not all tradeline vendors are created equal. Here's a few categories where Superior Tradelines rises above the competition:
+                </p>
+                <ul class="cs-ul">
+                    <li class="cs-li">Proven Track Record</li>
+                    <li class="cs-li">Personalized Strategy</li>
+                    <li class="cs-li">Transparent Pricing</li>
+                    <li class="cs-li">Exceptional Customer Support</li>
+                    <li class="cs-li">Legal Compliance</li>
+                    <li class="cs-li">Verified Tradelines</li>
+                </ul>
+                <a href="/contact" class="cs-button-solid">Discover More</a>
+            </div>
         </div>
-        <!--Table 2 - Tuesday-->
-        <div class="cs-table-wrapper cs-hidden" data-category="two">
-            <table class="cs-table">
-                <thead class="cs-thead">
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="col">Bank</th>
-                        <th class="cs-th" scope="col">Credit Limit</th>
-                        <th class="cs-th" scope="col">Date Opened</th>
-                        <th class="cs-th" scope="col">Purchase Deadline</th>
-                        <th class="cs-th" scope="col">Price</th>
-                        <th class="cs-th" scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody class="cs-tbody">
-                    {% if collections.tradeline | length == 0 %}
-                        <h1>No Available Tradelines At This Time</h1>
-                    {% else %}
-                        {%- for tradeline in collections.tradeline -%}
-                            <tr class="cs-tr">
-                                <th class="cs-th" scope="row">{{ tradeline.data.bankName }}</th>
-                                <td class="cs-td">{{ tradeline.data.creditLimit }}</td>
-                                <td class="cs-td">{{ tradeline.data.dateOpened | postDate }}</td>
-                                <td class="cs-td">{{ tradeline.date | postDate }}</td>
-                                <td class="cs-td">{{ tradeline.data.price }}</td>
-                                <td class="cs-td">
-                                    {% if tradeline.data.available %}
-                                        <a class="cs-cta" href="/">Purchase Now</a>
-                                    {% else %}
-                                        <a class="cs-cta disabled" >Not Available</a>
-                                    {% endif %}
-                                </td>
-                            </tr>
-                        {%- endfor -%}
-                    {% endif %}
-                </tbody>
-            </table>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/turbine2.png">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/turbine2.png">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/turbine2.png" alt="turbine" width="1280" height="568">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                     FAQ                      -->
+    <!-- ============================================ -->
+
+    <section id="faq-1458">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="\assets\images\pexels-pixabay-210607.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="\assets\images\pexels-pixabay-210607.jpg">
+                    <img loading="lazy" decoding="async" src="\assets\images\pexels-pixabay-210607.jpg" alt="body shop" width="522" height="609" aria-hidden="true">
+                </picture>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Asked Questions</span>
+                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <ul class="cs-faq-group">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How does climate change affect people?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is being done about climate change?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is being done about climate change?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Is it hopeless to stop climate change?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How is climate change affecting wildlife?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How do I join the volunteer team?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!--Table 3 - Wednesday-->
-        <div class="cs-table-wrapper cs-hidden" data-category="three">
-            <table class="cs-table">
-                <thead class="cs-thead">
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="col">Class</th>
-                        <th class="cs-th" scope="col">Class Name</th>
-                        <th class="cs-th" scope="col">Class Time</th>
-                        <th class="cs-th" scope="col">Instructor</th>
-                        <th class="cs-th" scope="col">Book</th>
-                    </tr>
-                </thead>
-                <tbody class="cs-tbody">
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">01</th>
-                        <td class="cs-td">Weight Lifting</td>
-                        <td class="cs-td">9:00AM - 10:00AM</td>
-                        <td class="cs-td">Wade Warren</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">02</th>
-                        <td class="cs-td">PowerPlay Fitness Fusion</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Cameron Williamson</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">03</th>
-                        <td class="cs-td">CardioCombat Craze</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Esther Howard</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">04</th>
-                        <td class="cs-td">MuscleMelt Madness</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Racheel Moor</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">05</th>
-                        <td class="cs-td">CoreCrush Challenge</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Robert Fox</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">06</th>
-                        <td class="cs-td">HighIntensity Havoc</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Ralph Edwards</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">07</th>
-                        <td class="cs-td">TotalBody Triumph</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Ronald Richards</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <!--Table 4 - Thursday-->
-        <div class="cs-table-wrapper cs-hidden" data-category="four">
-            <table class="cs-table">
-                <thead class="cs-thead">
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="col">Class</th>
-                        <th class="cs-th" scope="col">Class Name</th>
-                        <th class="cs-th" scope="col">Class Time</th>
-                        <th class="cs-th" scope="col">Instructor</th>
-                        <th class="cs-th" scope="col">Book</th>
-                    </tr>
-                </thead>
-                <tbody class="cs-tbody">
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">01</th>
-                        <td class="cs-td">Weight Lifting</td>
-                        <td class="cs-td">9:00AM - 10:00AM</td>
-                        <td class="cs-td">Wade Warren</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">02</th>
-                        <td class="cs-td">PowerPlay Fitness Fusion</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Cameron Williamson</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">03</th>
-                        <td class="cs-td">CardioCombat Craze</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Esther Howard</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">04</th>
-                        <td class="cs-td">MuscleMelt Madness</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Racheel Moor</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">05</th>
-                        <td class="cs-td">CoreCrush Challenge</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Robert Fox</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">06</th>
-                        <td class="cs-td">HighIntensity Havoc</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Ralph Edwards</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">07</th>
-                        <td class="cs-td">TotalBody Triumph</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Ronald Richards</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <!--Table 5 - Friday-->
-        <div class="cs-table-wrapper cs-hidden" data-category="five">
-            <table class="cs-table">
-                <thead class="cs-thead">
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="col">Class</th>
-                        <th class="cs-th" scope="col">Class Name</th>
-                        <th class="cs-th" scope="col">Class Time</th>
-                        <th class="cs-th" scope="col">Instructor</th>
-                        <th class="cs-th" scope="col">Book</th>
-                    </tr>
-                </thead>
-                <tbody class="cs-tbody">
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">01</th>
-                        <td class="cs-td">Weight Lifting</td>
-                        <td class="cs-td">9:00AM - 10:00AM</td>
-                        <td class="cs-td">Wade Warren</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">02</th>
-                        <td class="cs-td">PowerPlay Fitness Fusion</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Cameron Williamson</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">03</th>
-                        <td class="cs-td">CardioCombat Craze</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Esther Howard</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">04</th>
-                        <td class="cs-td">MuscleMelt Madness</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Racheel Moor</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">05</th>
-                        <td class="cs-td">CoreCrush Challenge</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Robert Fox</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">06</th>
-                        <td class="cs-td">HighIntensity Havoc</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Ralph Edwards</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">07</th>
-                        <td class="cs-td">TotalBody Triumph</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Ronald Richards</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <!--Table 6 - Saturday-->
-        <div class="cs-table-wrapper cs-hidden" data-category="six">
-            <table class="cs-table">
-                <thead class="cs-thead">
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="col">Class</th>
-                        <th class="cs-th" scope="col">Class Name</th>
-                        <th class="cs-th" scope="col">Class Time</th>
-                        <th class="cs-th" scope="col">Instructor</th>
-                        <th class="cs-th" scope="col">Book</th>
-                    </tr>
-                </thead>
-                <tbody class="cs-tbody">
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">01</th>
-                        <td class="cs-td">Weight Lifting</td>
-                        <td class="cs-td">9:00AM - 10:00AM</td>
-                        <td class="cs-td">Wade Warren</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">02</th>
-                        <td class="cs-td">PowerPlay Fitness Fusion</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Cameron Williamson</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">03</th>
-                        <td class="cs-td">CardioCombat Craze</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Esther Howard</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">04</th>
-                        <td class="cs-td">MuscleMelt Madness</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Racheel Moor</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">05</th>
-                        <td class="cs-td">CoreCrush Challenge</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Robert Fox</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">06</th>
-                        <td class="cs-td">HighIntensity Havoc</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Ralph Edwards</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                    <tr class="cs-tr">
-                        <th class="cs-th" scope="row">07</th>
-                        <td class="cs-td">TotalBody Triumph</td>
-                        <td class="cs-td">9.00AM - 10.00AM</td>
-                        <td class="cs-td">Ronald Richards</td>
-                        <td class="cs-td">
-                            <a class="cs-cta" href="/">Join Now</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <img class="cs-background" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-table-bg.png" alt="background" height="1920" width="995" loading="lazy" decoding="async">
-</section>
+    </section>
+                                    
                                 
+                                
+                            
+
+    {% include 'components/cta.html' %}
+
 {% endblock %}

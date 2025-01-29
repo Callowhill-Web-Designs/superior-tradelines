@@ -92,6 +92,46 @@
   .cs-button-solid:hover:before {
     width: 100%;
   }
+  .cs-button-outline {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    width: auto;
+    height: 46px;
+    padding: 0 2rem;
+    border: 1px solid var(--bodyTextColorWhite);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: color 0.3s;
+  }
+  .cs-button-outline:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: var(--primary);
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  .cs-button-outline:hover {
+    color: #fff;
+  }
+  .cs-button-outline:hover:before {
+    width: 100%;
+  }
   .cs-hide-on-mobile {
     display: none;
   }
@@ -628,6 +668,9 @@ html {
   #cs-navigation .cs-button-solid {
     display: none;
   }
+  #cs-navigation .cs-button-outline {
+    display: none;
+  }
 }
 /*-- -------------------------- -->
 <---     Navigation Dropdown    -->
@@ -841,6 +884,14 @@ html {
   body.scroll #cs-navigation .cs-logo {
     transform: translateY(5rem);
   }
+  body.scroll #cs-navigation .cs-button-solid {
+    transform: translateY(5rem);
+  }
+  body.scroll #cs-navigation .cs-button-outline {
+    transform: translateY(5rem);
+    border: 1px solid var(--headerColor);
+    color: var(--headerColor);
+  }
   body.scroll #cs-navigation .cs-top-bar:before {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -922,7 +973,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 3.125rem;
+    gap: 1rem;
     position: relative;
     z-index: 1;
   }
@@ -1333,10 +1384,30 @@ html {
     font-size: 1rem;
     line-height: 1.2em;
     font-weight: 700;
+    text-decoration: none;
     margin-bottom: 0.5rem;
     color: var(--bodyTextColorWhite);
     position: relative;
     display: block;
+  }
+  #cs-footer-1293 .cs-header:before {
+    /* underline */
+    content: "";
+    width: 0%;
+    height: 0.125rem;
+    background: currentColor;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: -0.125rem;
+    left: 0;
+    transition: width 0.3s;
+  }
+  #cs-footer-1293 .cs-header:hover {
+    color: var(--primary);
+  }
+  #cs-footer-1293 .cs-header:hover:before {
+    width: 100%;
   }
   #cs-footer-1293 .cs-nav-link {
     font-size: 0.875rem;

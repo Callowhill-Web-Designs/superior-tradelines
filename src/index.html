@@ -80,7 +80,7 @@ eleventyNavigation:
       <p class="cs-text">
         Our mission is to assist you in unlocking your credit potential. Through the process known as “Credit Enhancement”, we can help you enhance your credit reports by adding positive credit accounts.
       </p>
-      <a href="" class="cs-button-solid">Learn More</a>
+      <a href="/tradelines" class="cs-button-solid">Learn More</a>
       <div class="cs-reviews" aria-hidden="true">
         <div class="cs-reviews-flex">
           <img
@@ -188,14 +188,11 @@ eleventyNavigation:
       <div class="cs-flex">
         <h3 class="cs-h3">Get Started Now!</h3>
         <span class="cs-expires">Send us a message and a expert from our team will contact you.</span>
-        <p class="cs-form-text">
-          
-        </p>
       </div>
       <!--Form-->
       <form class="cs-form" id="cs-form-1467" name="Contact Form" method="post">
         <label class="cs-label">
-          Name
+          Name *
           <input
             class="cs-input"
             required
@@ -205,7 +202,7 @@ eleventyNavigation:
           />
         </label>
         <label class="cs-label">
-          Phone
+          Phone *
           <input
             class="cs-input"
             required
@@ -215,7 +212,7 @@ eleventyNavigation:
           />
         </label>
         <label class="cs-label">
-          Email
+          Email *
           <input
             class="cs-input"
             required
@@ -228,25 +225,18 @@ eleventyNavigation:
           How did you hear about us?
           <input
             class="cs-input"
-            required
             type="text"
             id="hear-1467"
             name="heat"
           />
         </label>
-        <label class="cs-label cs-message">
-          Message
-          <textarea
-            class="cs-input cs-textarea"
-            required
-            name="Message"
-            id="message-1467"
-          ></textarea>
-        </label>
         <button class="cs-button-solid cs-submit" type="submit">
           Schedule a Consultation
         </button>
       </form>
+      <p class="cs-form-text">
+        * Required
+      </p>
       <p class="cs-disclaimer">
         <img
           class="cs-disclaimer-icon"
@@ -257,7 +247,7 @@ eleventyNavigation:
           width="20"
           height="20"
         />
-        *By sumbitting this form, you grant Superior Tradelines LLC permission to contact you via email, phone or SMS.
+        By sumbitting this form, you grant Superior Tradelines LLC permission to contact you via email, phone or SMS.
       </p>
     </div>
   </div>
@@ -341,7 +331,7 @@ eleventyNavigation:
                     </div>
                 </li>
             </ul>     
-            <a href="" class="cs-button-solid">View Tradelines</a>        
+            <a href="/tradelines" class="cs-button-solid">Learn More</a>        
         </div>
     </div>
 </section>
@@ -362,8 +352,9 @@ eleventyNavigation:
                 Superior Tradelines specializes in credit enhancement by adding clients as authorized users to established credit accounts, known as tradelines, to improve credit scores. Ready to enhance your credit profile? Here's how our easy process works.
         </div>
         <ul class="cs-card-group">
+            <!-- Replace Anchor tags with divs -->
             <li class="cs-item">
-                <a href="" class="cs-link">
+                <a class="cs-link">
                     <picture class="cs-picture">
                         <source media="(max-width: 600px)"
                             srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/construction-book.png">
@@ -383,7 +374,7 @@ eleventyNavigation:
                 </a>
             </li>
             <li class="cs-item">
-                <a href="" class="cs-link">
+                <a class="cs-link">
                     <picture class="cs-picture">
                         <source media="(max-width: 600px)"
                             srcset="/assets/images/pexels-vojtech-okenka-127162-392018.jpg">
@@ -403,7 +394,7 @@ eleventyNavigation:
                 </a>
             </li>
             <li class="cs-item">
-                <a href="" class="cs-link">
+                <a class="cs-link">
                     <picture class="cs-picture">
                         <source media="(max-width: 600px)"
                             srcset="/assets/images/pexels-fauxels-3184465.jpg">
@@ -423,7 +414,7 @@ eleventyNavigation:
                 </a>
             </li>
             <li class="cs-item">
-                <a href="" class="cs-link">
+                <a class="cs-link">
                     <picture class="cs-picture">
                         <source media="(max-width: 600px)"
                             srcset="/assets/images/pexels-anna-nekrashevich-7552568.jpg">
@@ -462,7 +453,7 @@ eleventyNavigation:
             <p class="cs-text">
                 At Superior Tradelines, we specialize in helping individuals and businesses unlock their financial potential. With our premium tradeline services, you can enhance your credit profile, improve your financial credibility, and achieve your goals faster. 
             </p>
-            <a href="" class="cs-button-solid">View Our Tradelines</a>
+            <a href="/about" class="cs-button-solid">More About Us</a>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
@@ -582,8 +573,9 @@ eleventyNavigation:
                     </span>
                 </div>
             </li>
+            
         </ul>
-        <a href="" class="cs-button-solid">Talk with Our Team</a>
+        <a href="/contact" class="cs-button-solid">Talk with Our Team</a>
     </div>
 </section>
 
@@ -625,7 +617,7 @@ eleventyNavigation:
                 {%- endfor -%}
             {% endif %}
         </ul>
-        <button class="cs-button-solid">See More Articles</button>
+        <a href ="/blog" class="cs-button-solid">See More Articles</a>
     </div>
     <picture class="cs-background">
         <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/waves5.svg" alt="waves" >
@@ -653,6 +645,54 @@ eleventyNavigation:
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
+                            How long do tradelines stay on my credit report?
+                        </span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">
+                            Tradelines typically remain on your credit report for as long as the account is open and in good standing. We ensure 2 reporting cycles. If you are added as an authorized user, the account may stay visible for 2-6 reporting cycles after removal.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How quickly will the tradeline appear on my credit report?
+                        </span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">
+                            Tradelines usually appear on your credit report within 15 to 45 days after being added as an authorized user, depending on the reporting cycle of the credit card issuer.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Will buying a tradeline improve my credit score?
+                        </span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">
+                            Adding a tradeline can potentially boost your credit score by increasing your credit age, reducing your utilization ratio, and adding a positive payment history. However, the impact varies based on your existing credit profile.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can I remove a tradeline if I don’t see results?
+                        </span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">
+                            Yes, you can request removal as an authorized user, but results are not guaranteed, as credit score improvements depend on your unique situation.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
                             Can you legally buy tradelines?
                         </span>
                     </button>
@@ -669,24 +709,60 @@ eleventyNavigation:
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            Are tradelines worth it?
+                            How much does a tradeline cost?
                         </span>
                     </button>
                     <div class="cs-item-p">
                         <p class="cs-text">
-                            In order to determine if its worth it, you have to consider your current credit situation and your goals. Tradelines may or may not work. If you have a thin credit file or a low credit score, adding a tradeline with a positive payment history and low utilization could help improve your credit profile. It’s always recommended to consult with a financial advisor or credit professional before making any decisions regarding tradelines or other credit-building strategies.
+                            Costs vary based on factors like credit limit, age of the account, and desired results. Prices typically range from a few hundred to several thousand dollars per tradeline.
                         </p>
                     </div>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <span class="cs-button-text">
-                            How much will a tradeline boost my credit?
+                            What factors should I consider when choosing a tradeline?
                         </span>
                     </button>
                     <div class="cs-item-p">
                         <p class="cs-text">
-                            The impact of adding a tradeline to your credit report can vary depending on several factors, including the age and type of the tradeline, your overall credit history, and the scoring model used by lenders. It is important to note that there is no way to guarantee how much it will boost your credit. The study we conducted reported that – on average (over 900 clients) – credit scores increased 88 points. But, you should <a href="/">review the details of that study.</a>
+                            Focus on the account’s age, credit limit, payment history, and the issuer’s reporting practices. Older accounts with low utilization are usually more beneficial.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Can I use tradelines to get approved for a loan or credit card?
+                        </span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">
+                            Tradelines can strengthen your credit profile, improving your chances, but approval depends on other factors like your income and debt-to-income ratio.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What happens if the account holder removes me from the tradeline?
+                        </span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">
+                            Once removed, the tradeline may stay on your credit report for up to 2–6 reporting cycles before disappearing, and its impact will no longer apply.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How many tradelines should I purchase for the best results?
+                        </span>
+                    </button>
+                    <div class="cs-item-p">
+                        <p class="cs-text">
+                            The number of tradelines needed depends on your credit goals and current profile. A consultation with a professional can help determine the best strategy.
                         </p>
                     </div>
                 </li>

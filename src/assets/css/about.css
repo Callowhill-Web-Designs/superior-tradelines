@@ -92,6 +92,17 @@
     line-height: 1.5em;
     color: #353535;
   }
+  #sbs .cs-flex-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+  #sbs .cs-reviews-img {
+    width: 3rem;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #fff;
+  }
   #sbs .cs-name {
     display: block;
     margin: 0 0 0.25rem;

@@ -1,16 +1,16 @@
 module.exports = {
     "name": "Superior Tradelines",
-    "email": "email@emailprovider.com",
-    "phoneForTel": "123-456-7890",
-    "phoneFormatted": "(123) 456-7890",
+    "email": "info@superiortradelines.com",
+    "phoneForTel": "800-431-4741",
+    "phoneFormatted": "(800) 431-4741",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
+        "lineOne": "125 E. Merritt Island Causeway",
+        "lineTwo": "STE 107 #110",
+        "city": "Merritt Island",
+        "state": "FL",
+        "zip": "832952",
         "country": "US",
-        "mapLink": "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6"
+        "mapLink": "https://maps.app.goo.gl/Ntn1XNwYpAT24s8X7"
     },
     "socials": {
         "facebook": "https://www.facebook.com/",

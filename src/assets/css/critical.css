@@ -227,13 +227,15 @@
     display: block;
   }
   #hero-1467 .cs-form-text {
-    font-size: var(--bodyFontSize);
+    font-size: 0.875rem;
+    text-align: left;
     line-height: 1.5em;
-    text-align: inherit;
-    width: 100%;
-    max-width: 40.625rem;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 6px 0;
     color: var(--bodyTextColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.25rem;
   }
   #hero-1467 .cs-form {
     width: 100%;
