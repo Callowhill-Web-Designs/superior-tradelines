@@ -259,7 +259,7 @@
                 background-size: contain;
                 background-repeat: no-repeat;
                 opacity: 1;
-                display: block;
+                display: none;
                 position: relative;
                 z-index: 10;
             }
@@ -434,6 +434,7 @@
                 height: (28/16rem);
                 margin: 0;
                 background-image: url("../svgs/arrow-large.svg");
+                display: block;
                 position: absolute;
                 bottom: (-40/16rem);
                 left: clamp(8.5rem, 18vw, 18.5rem);
@@ -1019,7 +1020,7 @@
         .cs-item {
             list-style: none;
             text-align: left;
-            max-width: (710/16rem);
+            width: 100%;
             /* 16px - 40px top & bottom */
             /* 16px - 60px left & right */
             padding: clamp(1rem, 3.15vw, 2.5rem) clamp(1rem, 5vw, 3.75rem);
