@@ -1,0 +1,299 @@
+/* PAGE-SPECIFIC STYLES FOR THE BLOG AND ARTICLE PAGES */
+
+/*-- -------------------------- -->
+<---   Interior Page Header     -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+    #int-hero {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 30vh;
+        padding-top: (50/16rem);
+
+        picture {
+            z-index: -2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        h1 {
+            position: relative;
+            margin: 0 auto;
+            margin-top: (70/16rem);
+            margin-bottom: (30/16rem);
+            max-width: (500/16rem);
+            width: 96%;
+            font-size: (64/30rem);
+            color: #fff;
+            text-align: center;
+        }
+
+        p {
+            display: block;
+            margin: auto;
+            margin-bottom: (30/16rem);
+            max-width: (400/16rem);
+            width: 96%;
+            color: #fff;
+            text-align: center;
+        }
+
+        &:before {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            opacity: 0.7;
+            display: block;
+            background: #000;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48rem) {
+    #int-hero {
+        font-size: 100%;
+
+        h1 {
+            font-size: (64/16rem);
+        }
+    }
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64rem) {
+    #int-hero {
+        background-attachment: fixed;
+        min-height: (300/16rem);
+        height: auto;
+        padding-top: (180/16rem);
+        font-size: inherit;
+        padding-block-end: (100/16rem);
+    }
+}
+
+/*-- -------------------------- -->
+<---        Main Content        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    .blog-container {
+        padding: 24px 16px;
+    }
+
+    .main-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: (8px);
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        row-gap: (8px);
+    }
+}
+
+/* Tablet - 1024px */
+@media only screen and (min-width: 64rem) {
+    .main-content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        row-gap: (50/16em);
+    }
+
+    .main-content {
+        row-gap: (50/16em);
+    }
+
+    .blog-container {
+        padding: 50px 0;
+    }
+}
+
+
+
+
+/*-- -------------------------- -->
+<---        Blog Articles       -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    .blog-article {
+        display: block;
+        max-width: (795/16em);
+        width: 100%;
+        .blog-mainImage {
+            position: relative;
+            display: block;
+            border-radius: (8/16em);
+            margin-bottom: (50/16em);
+            height: clamp(200px, 30vw, 400px);
+            width: 100%;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .blog-author-img {
+            position: relative;
+            display: block;
+            border-radius: 50%;
+            height: (32/16em);
+            width: (32/16em);
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .blog-authorGroup {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: (12/16rem);
+        }
+
+        .blog-author,
+        .blog-date {
+            font-size: (14/16rem);
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+        }
+
+        .blog-dot {
+            display: block;
+            border-radius: 50%;
+            background-color: #fe4f70;
+            height: 3px;
+            width: 3px;
+        }
+
+        .blog-h1 {
+            margin: (16/16rem) 0;
+            max-width: (550/16rem);
+            font-size: clamp(20px, 5vw, 39px);
+            line-height: 1.4em;
+            font-weight: 700;
+            color: var(--headerColor);
+        }
+
+        #blog-content {
+            border-top: 1px solid #ebebeb;
+            margin-top: (16/16em);
+            padding-top: (25/16em);
+
+            h1 {
+                margin-bottom: 1rem;
+                font-size: 2.25rem;
+                line-height: 1.75em;
+                font-weight: 700;
+                color: var(--headerColor);
+            }
+
+            h2 {
+                margin-bottom: (16/16rem);
+                font-size: (28/16rem);
+                line-height: 1.5em;
+                font-weight: 700;
+                color: var(--headerColor);
+            }
+
+            h3 {
+                margin-bottom: (16/16rem);
+                font-size: (24/16rem);
+                line-height: 1.5em;
+                font-weight: 700;
+                color: var(--headerColor);
+            }
+
+            h4,
+            h5,
+            h6 {
+                margin-bottom: (16/16rem);
+                font-size: (20/16rem);
+                line-height: 1.5em;
+                font-weight: 700;
+                color: var(--headerColor);
+            }
+
+            p {
+                margin: 0;
+                margin-bottom: (16/16rem);
+                font-size: (16/16rem);
+                line-height: 1.6em;
+                color: var(--bodyTextColor);
+            }
+
+            a {
+                text-decoration: underline;
+                font-size: inherit;
+                color: var(--secondary);
+            }
+
+            ul,
+            ol {
+                margin: (16/16rem) 0;
+                padding-left: (40/16rem);
+
+                li {
+                    margin-bottom: (16/16rem);
+                    list-style: circle;
+                    font-size: (16/16rem);
+                    line-height: 1.6em;
+                    color: var(--bodyTextColor);
+                }
+            }
+
+            img {
+                display: block;
+                border-radius: (8/16rem);
+                margin: (16/16rem) 0;
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}
