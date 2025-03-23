@@ -36,7 +36,7 @@ eleventyNavigation:
 
     <section id="cs-contact">
         <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
+            <form id="cs-form" name="Contact Form" method="post" netlify>
                 <div class="cs-content">
                     <span class="cs-topper">Contact</span>
                     <h2 class="cs-title">Get in Touch</h2>
@@ -46,23 +46,23 @@ eleventyNavigation:
                 </div>
                 <label>
                     Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
+                    <input required type="text" id="name" name="name" placeholder="Name" autocomplete="name">
                 </label>
                 <label>
                     Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
+                    <input required type="text" id="email" name="email" placeholder="Email" autocomplete="email">
                 </label>
                 <label>
                     Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
+                    <input required type="text" id="phone" name="phone" placeholder="Phone" autocomplete="tel">
                 </label>
                 <label>
                     How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
+                    <input type="text" id="find" name="find-us" placeholder="How did you find us?" autocomplete="off">
                 </label>
                 <label class="cs-label-message">
                     Message
-                    <textarea name="Message" id="message" placeholder="Write message..."></textarea>
+                    <textarea name="Message" id="message" placeholder="Write message..." autocomplete="off"></textarea>
                 </label>
                 <button class="cs-button-solid" type="submit">Submit Message</button>
             </form>
