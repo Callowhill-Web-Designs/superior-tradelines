@@ -1,5 +1,5 @@
 ---
-title: "Best Tradeline Companies: Ranked By Experience."
+title: "Best Tradeline Companies: Ranked By Experience"
 url: best-tradelines-companies-ranked-by-days-of-experience
 description: "Looking for who has the best tradelines? See our rankings for the
   best tradeline companies by experience. "
