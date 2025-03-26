@@ -44,27 +44,42 @@ eleventyNavigation:
                         Unlock your credit potential today! Whether you're aiming for a mortgage, car loan, or business credit, we help you get there faster.
                     </p>
                 </div>
-                <label>
+                <label class="cs-label cs-required">
                     Name
                     <input required type="text" id="name" name="name" placeholder="Name" autocomplete="name">
                 </label>
-                <label>
+                <label class="cs-label cs-required">
                     Email
                     <input required type="text" id="email" name="email" placeholder="Email" autocomplete="email">
                 </label>
-                <label>
+                <label class="cs-label cs-required">
                     Phone
                     <input required type="text" id="phone" name="phone" placeholder="Phone" autocomplete="tel">
                 </label>
-                <label>
+                <label class="cs-label">
                     How Did You Find Us
                     <input type="text" id="find" name="find-us" placeholder="How did you find us?" autocomplete="off">
                 </label>
-                <label class="cs-label-message">
+                <label class="cs-label cs-label-message">
                     Message
                     <textarea name="Message" id="message" placeholder="Write message..." autocomplete="off"></textarea>
                 </label>
                 <button class="cs-button-solid" type="submit">Submit Message</button>
+                <p class="cs-form-text cs-required">
+                    Required
+                </p>
+                <p class="cs-disclaimer">
+                    <img
+                      class="cs-disclaimer-icon"
+                      decoding="async"
+                      fetchpriority="high"
+                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/lock.svg"
+                      alt="icon"
+                      width="20"
+                      height="20"
+                    />
+                    By sumbitting this form, you grant Superior Tradelines LLC permission to contact you via email, phone or SMS.
+                </p>
             </form>
             <div class="cs-right-section">
                 <!--Email-->

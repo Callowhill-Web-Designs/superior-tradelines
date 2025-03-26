@@ -192,9 +192,9 @@ eleventyNavigation:
         <span class="cs-expires">Send us a message and a expert from our team will contact you.</span>
       </div>
       <!--Form-->
-      <form class="cs-form" id="cs-form-1467" name="Front Page Form" method="post" data-netlify="true">
-        <label class="cs-label">
-          Name *
+      <form class="cs-form" id="form_69_536cf6c929643_web2" name="Front Page Form" action="https://members.superiortradelines.com/admin/webforms/processform.php" enctype="multipart/form-data" method="post">
+        <label class="cs-label cs-required" for="name">
+          Name
           <input
             class="cs-input"
             required
@@ -202,21 +202,23 @@ eleventyNavigation:
             id="name-1467"
             name="name"
             autocomplete="name"
+            placeholder="i.e., John Smith"
           />
         </label>
-        <label class="cs-label">
-          Phone *
+        <label class="cs-label cs-required" for="phone">
+          Phone
           <input
             class="cs-input"
             required
             type="tel"
-            id="phone-1467"
-            name="phone"
+            id="phone_number"
+            name="the_best_number_to_reach_me_is_"
             autocomplete="tel"
+            placeholder="i.e., (123)-123-1234"
           />
         </label>
-        <label class="cs-label">
-          Email *
+        <label class="cs-label cs-required" for="email">
+          Email
           <input
             class="cs-input"
             required
@@ -224,6 +226,7 @@ eleventyNavigation:
             id="email-1467"
             name="email"
             autocomplete="email"
+            placeholder="i.e., john@smith.com"
           />
         </label>
         <label class="cs-label">
@@ -240,8 +243,8 @@ eleventyNavigation:
           Schedule a Free Consultation
         </button>
       </form>
-      <p class="cs-form-text">
-        * Required
+      <p class="cs-form-text cs-required">
+        Required
       </p>
       <p class="cs-disclaimer">
         <img

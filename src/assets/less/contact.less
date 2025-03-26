@@ -53,7 +53,9 @@
         }
 
         #cs-form {
+
             margin-bottom: (40/16rem);
+            
             label {
                 display: flex;
                 flex-direction: column;
@@ -69,7 +71,7 @@
 
             .cs-label-message {
                 /* 32px - 48px */
-                margin-bottom: clamp(2rem, 6.3vw, 3rem);
+                margin-bottom: 12px;
             }
 
             input,
@@ -77,6 +79,7 @@
                 border: 1px solid #b4b2c7;
                 border-radius: (8/16rem);
                 margin-top: (4/16rem);
+                margin-bottom: (16/16rem);
                 height: (64/16rem);
                 width: 100%;
                 /* prevents border & padding from affecting height */
@@ -99,6 +102,50 @@
             .cs-button-solid {
                 border: none;
                 width: 100%;
+            }
+
+            .cs-form-text {
+                font-size: (14/16rem);
+                text-align: left;
+                line-height: 1.5em;
+                margin: 12px 0px 6px 14px;
+                color: var(--bodyTextColor);
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: (4/16rem);
+            }
+
+            .cs-label {
+                display: inline;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: (4/16rem);
+            }
+
+            .cs-required {
+                &::before {
+                    color: #e32;
+                    content: ' *';
+                    display: inline;
+                }
+            }
+
+            .cs-disclaimer {
+                font-size: (14/16rem);
+                text-align: left;
+                line-height: 1.5em;
+                margin: 0 auto 0 0;
+                color: var(--bodyTextColor);
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: (4/16rem);
+            }
+    
+            .cs-disclaimer-icon {
+                width: 20px;
+                height: auto;
             }
         }
 
@@ -217,7 +264,15 @@
                 width: 48%;
             }
 
+            input {
+                margin-bottom: (0/16rem);
+            }
+
             .cs-label-message {
+                width: 100%;
+            }
+
+            .cs-form-text {
                 width: 100%;
             }
         }

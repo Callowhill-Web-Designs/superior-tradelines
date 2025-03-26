@@ -137,7 +137,7 @@
     align-items: center;
   }
   #hero-1467 .cs-right {
-    text-align: center;
+    text-align: left;
     width: 100%;
     /* 16px - 48px left & right */
     /* 32px - 48px top & bottom */
@@ -249,11 +249,15 @@
     font-size: 0.875rem;
     width: 100%;
     color: #767676;
-    display: flex;
+    display: inline;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
     gap: 0.25rem;
+  }
+  #hero-1467 .cs-required::before {
+    color: #e32;
+    content: ' *';
+    display: inline;
   }
   #hero-1467 .cs-input,
   #hero-1467 select {
@@ -326,7 +330,7 @@
     gap: 0.25rem;
   }
   #hero-1467 .cs-disclaimer-icon {
-    width: 1.25rem;
+    width: 20px;
     height: auto;
   }
   #hero-1467 .cs-background {
@@ -367,6 +371,9 @@
   #hero-1467 .cs-form {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+  }
+  #hero-1467 .cs-form-text::before {
+    padding-left: 14px;
   }
   #hero-1467 .cs-label {
     grid-column: span 12;
