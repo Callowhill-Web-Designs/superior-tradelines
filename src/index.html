@@ -291,12 +291,16 @@ eleventyNavigation:
   <!-- Background Image, added in CSS as a backgorund image for parallax effect -->
   <picture class="cs-background">
     <source
-      media="(max-width: 600px)"
+      media="(max-width: 767px)"
       srcset="\assets\images\train-hero-m.webp"
     />
     <source
-      media="(min-width: 601px)"
+      media="(min-width: 768px) and (max-width: 1023px)"
       srcset="\assets\images\train-hero-t.webp"
+    />
+    <source
+      media="(min-width: 1024px)"
+      srcset="\assets\images\train-hero.webp"
     />
     <img
       loading="lazy"
