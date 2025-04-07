@@ -266,9 +266,15 @@ eleventyNavigation:
             autocomplete="off"
           />
         </label>
-        <button class="cs-button-solid cs-submit" onclick="window.location.href = 'https://tradelinesuperior.com/whats-next';">
+        <button id="submitBtn" class="cs-button-solid cs-submit">
           Schedule a Free Consultation
         </button>
+        <script>
+            document.getElementById("submitBtn").addEventListener("click", myFunction);  
+            function myFunction() {  
+              window.location.href="https://tradelinesuperior.com/whats-next";  
+            }
+          </script>
       </form>
       <p class="cs-form-text cs-required">
         Required
