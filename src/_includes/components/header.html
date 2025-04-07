@@ -64,6 +64,9 @@
                         {% if entry.hideOnDesktop %}
                             {% set hideClasses = (hideClasses.push("cs-hide-on-desktop"), hideClasses) %}
                         {% endif %}
+                        {% if entry.hideOnEverywhere %}
+                            {% set hideClasses = (hideClasses.push("cs-hide-on-everywhere"), hideClasses) %}
+                        {% endif %}
 
                         {# If this page is a dropdown, give it the appropriate classes, icons and accessibility attributes #}
                         <li class="cs-li {% if hasChild %} cs-dropdown {% endif %} {{ hideClasses | join(" ") }}">

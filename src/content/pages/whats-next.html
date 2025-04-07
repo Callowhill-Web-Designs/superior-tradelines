@@ -1,0 +1,64 @@
+---
+title: "What's Next | Superior Tradelines"
+description: "Thank you for your interest in Superior Tradelines. We will be in touch shortly."
+preloadImg: "/assets/images/train-hero.webp"
+permalink: "whats-next/"
+eleventyNavigation:
+    key: What's Next
+    order: 700
+    hideOnEverywhere: true
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/whats-next.css">
+{% endblock %}
+
+{% block body %}              
+                                
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-1426">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper"> We'll be in touch soon</span>
+                <h1 class="cs-title">Thank You For Choosing Superior Tradelines</h1>
+                <p class="cs-text">
+                    A representative will reach out to you shortly to discuss your options and answer any questions you may have. We appreciate your interest in our services and look forward to assisting you on your journey to better credit.
+                </p>
+            </div>
+        </div>
+
+        <!-- Background Image -->
+        <picture class="cs-background">
+            <source
+              media="(max-width: 767px)"
+              srcset="\assets\images\train-hero-m.webp"
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="\assets\images\train-hero-t.webp"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="\assets\images\train-hero.webp"
+            />
+            <img
+              decoding="async"
+              src="\assets\images\train-hero.webp"
+              alt="field"
+              width="1920"
+              height="1200"
+              aria-hidden="true"
+            />
+          </picture>
+    </section>
+                                    
+                                
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

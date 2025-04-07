@@ -135,6 +135,9 @@
   .cs-hide-on-mobile {
     display: none;
   }
+  .cs-hide-on-everywhere {
+    display: none;
+  }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
@@ -142,6 +145,9 @@
     display: block;
   }
   .cs-hide-on-desktop {
+    display: none;
+  }
+  .cs-hide-on-everywhere {
     display: none;
   }
 }
@@ -688,7 +694,6 @@ html {
   #cs-navigation .cs-li {
     text-align: center;
     width: 100%;
-    display: block;
   }
   #cs-navigation .cs-dropdown {
     position: relative;
