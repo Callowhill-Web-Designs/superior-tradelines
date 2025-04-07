@@ -1,5 +1,5 @@
 ---
-title: "Tradelines For Sale: How Much & Where To Get Them."
+title: "Tradelines For Sale: How Much & Where To Get Them"
 url: tradelines-for-sale
 description: Learn more about the tradeline industry, including where to get
   tradelines and the pricing of tradelines for sale.
