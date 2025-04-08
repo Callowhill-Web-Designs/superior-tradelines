@@ -192,7 +192,7 @@ eleventyNavigation:
         <span class="cs-expires">Send us a message and a expert from our team will contact you.</span>
       </div>
       <!--Form-->
-      <form class="cs-form" id="form_69_536cf6c929643_web2" name="Front Page Form" target="_blank" action="https://members.superiortradelines.com/admin/webforms/processform.php" enctype="multipart/form-data" method="post">
+      <form class="cs-form" id="form_69_536cf6c929643_web2" name="Front Page Form" action="https://members.superiortradelines.com/admin/webforms/processform.php" enctype="multipart/form-data" method="post">
         <label class="cs-label cs-required" for="name">
           Name
           <input
@@ -255,6 +255,7 @@ eleventyNavigation:
             placeholder="i.e., john@smith.com"
           />
           <input type="hidden" name="form_id" value="69" />
+          <input name="is_rdir" type="hidden" value="redirect" />
         </label>
         <label class="cs-label">
           How did you hear about us?
@@ -269,12 +270,6 @@ eleventyNavigation:
         <button id="submitBtn" class="cs-button-solid cs-submit">
           Schedule a Free Consultation
         </button>
-        <script>
-            document.getElementById("submitBtn").addEventListener("click", myFunction);  
-            function myFunction() {  
-              window.location.href="https://tradelinesuperior.com/whats-next";  
-            }
-        </script>
     </form>
     <p class="cs-form-text cs-required">
         Required
