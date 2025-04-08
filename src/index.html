@@ -192,7 +192,7 @@ eleventyNavigation:
         <span class="cs-expires">Send us a message and a expert from our team will contact you.</span>
       </div>
       <!--Form-->
-      <form class="cs-form" id="form_69_536cf6c929643_web2" name="Front Page Form" enctype="multipart/form-data" method="POST">
+      <form class="cs-form" id="form_69_536cf6c929643_web2" name="Front Page Form" target="_blank" action="https://members.superiortradelines.com/admin/webforms/processform.php" enctype="multipart/form-data" method="post">
         <label class="cs-label cs-required" for="name">
           Name
           <input
@@ -266,36 +266,16 @@ eleventyNavigation:
             autocomplete="off"
           />
         </label>
-        <button id="submitBtn" class="cs-button-solid cs-submit" type="button">
+        <button id="submitBtn" class="cs-button-solid cs-submit">
           Schedule a Free Consultation
         </button>
-    </form>
-
-    <script>
-        document.getElementById("submitBtn").addEventListener("click", async function (event) {
-          event.preventDefault();
-
-          const form = document.getElementById("form_69_536cf6c929643_web2");
-          const formData = new FormData(form);
-
-          try {
-            const response = await fetch("https://members.superiortradelines.com/admin/webforms/processform.php", {
-              method: "POST",
-              body: formData,
-            });
-
-            if (response.ok) {
-              window.location.href = "/whats-next";
-            } else {
-              alert("There was an error submitting the form. Please try again. 1");
+        <script>
+            document.getElementById("submitBtn").addEventListener("click", myFunction);  
+            function myFunction() {  
+              window.location.href="https://tradelinesuperior.com/whats-next";  
             }
-          } catch (error) {
-            console.error("Error submitting the form:", error);
-            alert("There was an error submitting the form. Please try again. 2");
-          }
-        });
-    </script>
-
+        </script>
+    </form>
     <p class="cs-form-text cs-required">
         Required
     </p>
