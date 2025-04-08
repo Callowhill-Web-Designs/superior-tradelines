@@ -269,9 +269,9 @@ eleventyNavigation:
         <button id="submitBtn" class="cs-button-solid cs-submit" type="button">
           Schedule a Free Consultation
         </button>
-      </form>
+    </form>
 
-      <script>
+    <script>
         document.getElementById("submitBtn").addEventListener("click", async function (event) {
           event.preventDefault();
 
@@ -287,14 +287,22 @@ eleventyNavigation:
             if (response.ok) {
               window.location.href = "/whats-next";
             } else {
-              alert("There was an error submitting the form. Please try again. 1 ");
+              alert("There was an error submitting the form. Please try again. 1");
             }
           } catch (error) {
             console.error("Error submitting the form:", error);
-            alert("There was an error submitting the form. Please try again. 2 ");
+            alert("There was an error submitting the form. Please try again. 2");
           }
         });
-      </script>
+    </script>
+
+    <p class="cs-form-text cs-required">
+        Required
+    </p>
+    <p class="cs-disclaimer">
+    <img class="cs-disclaimer-icon" decoding="async" fetchpriority="high" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/lock.svg" alt="icon" width="20" height="20"/>
+    By sumbitting this form, you grant Superior Tradelines LLC permission to contact you via email, phone or SMS.
+    </p>
     </div>
   </div>
   <!-- Background Image, added in CSS as a backgorund image for parallax effect -->
