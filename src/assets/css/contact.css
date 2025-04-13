@@ -43,10 +43,10 @@
     max-width: clamp(25.25rem, 30vw, 32.625rem);
     text-align: left;
   }
-  #cs-contact #cs-form {
+  #cs-contact .cs-form {
     margin-bottom: 2.5rem;
   }
-  #cs-contact #cs-form label {
+  #cs-contact .cs-form label {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,12 +58,12 @@
     font-weight: 700;
     color: var(--headerColor);
   }
-  #cs-contact #cs-form .cs-label-message {
+  #cs-contact .cs-form .cs-label-message {
     /* 32px - 48px */
     margin-bottom: 12px;
   }
-  #cs-contact #cs-form input,
-  #cs-contact #cs-form textarea {
+  #cs-contact .cs-form input,
+  #cs-contact .cs-form textarea {
     border: 1px solid #b4b2c7;
     border-radius: 0.5rem;
     margin-top: 0.25rem;
@@ -76,20 +76,20 @@
     font-size: 1rem;
     transition: border 0.3s;
   }
-  #cs-contact #cs-form input:hover,
-  #cs-contact #cs-form textarea:hover {
+  #cs-contact .cs-form input:hover,
+  #cs-contact .cs-form textarea:hover {
     border: 1px solid var(--primary);
   }
-  #cs-contact #cs-form textarea {
+  #cs-contact .cs-form textarea {
     min-height: 7.5rem;
     padding-top: 1.25rem;
     font-family: inherit;
   }
-  #cs-contact #cs-form .cs-button-solid {
+  #cs-contact .cs-form .cs-button-solid {
     border: none;
     width: 100%;
   }
-  #cs-contact #cs-form .cs-form-text {
+  #cs-contact .cs-form .cs-form-text {
     font-size: 0.875rem;
     text-align: left;
     line-height: 1.5em;
@@ -100,18 +100,18 @@
     align-items: flex-start;
     gap: 0.25rem;
   }
-  #cs-contact #cs-form .cs-label {
+  #cs-contact .cs-form .cs-label {
     display: inline;
     flex-direction: column;
     justify-content: flex-start;
     gap: 0.25rem;
   }
-  #cs-contact #cs-form .cs-required::before {
+  #cs-contact .cs-form .cs-required::before {
     color: #e32;
     content: ' *';
     display: inline;
   }
-  #cs-contact #cs-form .cs-disclaimer {
+  #cs-contact .cs-form .cs-disclaimer {
     font-size: 0.875rem;
     text-align: left;
     line-height: 1.5em;
@@ -122,7 +122,7 @@
     align-items: flex-start;
     gap: 0.25rem;
   }
-  #cs-contact #cs-form .cs-disclaimer-icon {
+  #cs-contact .cs-form .cs-disclaimer-icon {
     width: 20px;
     height: auto;
   }
@@ -217,22 +217,22 @@
 }
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75em) {
-  #cs-contact #cs-form {
+  #cs-contact .cs-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
   }
-  #cs-contact #cs-form label {
+  #cs-contact .cs-form label {
     width: 48%;
   }
-  #cs-contact #cs-form input {
+  #cs-contact .cs-form input {
     margin-bottom: 0rem;
   }
-  #cs-contact #cs-form .cs-label-message {
+  #cs-contact .cs-form .cs-label-message {
     width: 100%;
   }
-  #cs-contact #cs-form .cs-form-text {
+  #cs-contact .cs-form .cs-form-text {
     width: 100%;
   }
 }
@@ -245,10 +245,10 @@
     max-width: 80rem;
     gap: 5rem;
   }
-  #cs-contact #cs-form {
+  #cs-contact .cs-form {
     max-width: 39.375rem;
   }
-  #cs-contact #cs-form label {
+  #cs-contact .cs-form label {
     width: 100%;
   }
   #cs-contact .cs-right-section {
@@ -269,14 +269,14 @@
 }
 /* Small Desktop - 1300px */
 @media only screen and (min-width: 81.25em) {
-  #cs-contact #cs-form {
+  #cs-contact .cs-form {
     column-gap: 0rem;
   }
-  #cs-contact #cs-form label {
+  #cs-contact .cs-form label {
     max-width: 19.0625rem;
     width: 48%;
   }
-  #cs-contact #cs-form .cs-label-message {
+  #cs-contact .cs-form .cs-label-message {
     max-width: 100%;
   }
   #cs-contact .cs-right-section {
@@ -289,15 +289,15 @@
   body.dark-mode #cs-contact .cs-title {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #cs-contact #cs-form label,
-  body.dark-mode #cs-contact #cs-form input,
-  body.dark-mode #cs-contact #cs-form textarea {
+  body.dark-mode #cs-contact .cs-form label,
+  body.dark-mode #cs-contact .cs-form input,
+  body.dark-mode #cs-contact .cs-form textarea {
     background-color: transparent;
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #cs-contact #cs-form label::placeholder,
-  body.dark-mode #cs-contact #cs-form input::placeholder,
-  body.dark-mode #cs-contact #cs-form textarea::placeholder {
+  body.dark-mode #cs-contact .cs-form label::placeholder,
+  body.dark-mode #cs-contact .cs-form input::placeholder,
+  body.dark-mode #cs-contact .cs-form textarea::placeholder {
     /* lighten up the color of the text by 40%*/
     filter: brightness(1.4);
   }

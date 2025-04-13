@@ -36,7 +36,9 @@ eleventyNavigation:
 
     <section id="cs-contact">
         <div class="cs-container">
-            <form id="cs-form" name="Contact Page Form" method="post" data-netlify="true">
+            <form class="cs-form" id="form_69_536cf6c929643_web2" name="Contact Page Form"
+                action="https://members.superiortradelines.com/admin/webforms/processform.php"
+                enctype="multipart/form-data" method="post">
                 <div class="cs-content">
                     <span class="cs-topper">Contact</span>
                     <h2 class="cs-title">Get in Touch</h2>
@@ -44,25 +46,63 @@ eleventyNavigation:
                         Unlock your credit potential today! Whether you're aiming for a mortgage, car loan, or business credit, we help you get there faster.
                     </p>
                 </div>
-                <label class="cs-label cs-required">
+                <label class="cs-label cs-required" for="name">
                     Name
-                    <input required type="text" id="name" name="name" placeholder="Name" autocomplete="name">
+                    <input class="cs-input" required type="text" id="name-1467" name="name" autocomplete="name"
+                        placeholder="i.e., John Smith" />
                 </label>
-                <label class="cs-label cs-required">
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email" autocomplete="email">
-                </label>
-                <label class="cs-label cs-required">
+                <label class="cs-label cs-required" for="phone">
                     Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone" autocomplete="tel">
+                    <script>
+                        window.addEventListener("load", () => {
+                            const phoneInput = document.querySelector("#phone_number");
+                            phoneInput.addEventListener("keydown", disallowNonNumericInput);
+                            phoneInput.addEventListener("keyup", formatToPhone);
+                        });
+
+                        const disallowNonNumericInput = (evt) => {
+                            if (evt.ctrlKey) {
+                                return;
+                            }
+                            if (evt.key.length > 1) {
+                                return;
+                            }
+                            if (/[0-9.]/.test(evt.key)) {
+                                return;
+                            }
+                            evt.preventDefault();
+                        };
+
+                        const formatToPhone = (evt) => {
+                            const digits = evt.target.value
+                                .replace(/\D/g, "")
+                                .substring(0, 10);
+                            const areaCode = digits.substring(0, 3);
+                            const prefix = digits.substring(3, 6);
+                            const suffix = digits.substring(6, 10);
+
+                            if (digits.length > 6) {
+                                evt.target.value = `(${areaCode})-${prefix}-${suffix}`;
+                            } else if (digits.length > 3) {
+                                evt.target.value = `(${areaCode})-${prefix}`;
+                            } else if (digits.length > 0) {
+                                evt.target.value = `(${areaCode}-`;
+                            }
+                        };
+                    </script>
+                    <input class="cs-input" required type="tel" id="phone_number" name="the_best_number_to_reach_me_is_"
+                        autocomplete="tel" placeholder="i.e., (123)-123-1234" maxlength="14" />
+                </label>
+                <label class="cs-label cs-required" for="email">
+                    Email
+                    <input class="cs-input" required type="email" id="email-1467" name="email" autocomplete="email"
+                        placeholder="i.e., john@smith.com" />
+                    <input type="hidden" name="form_id" value="69" />
+                    <input name="is_rdir" type="hidden" value="redirect" />
                 </label>
                 <label class="cs-label">
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?" autocomplete="off">
-                </label>
-                <label class="cs-label cs-label-message">
-                    Message
-                    <textarea name="Message" id="message" placeholder="Write message..." autocomplete="off"></textarea>
+                    How did you hear about us?
+                    <input class="cs-input" type="text" id="hear-1467" name="heat" autocomplete="off" />
                 </label>
                 <button class="cs-button-solid" type="submit">Submit Message</button>
                 <p class="cs-form-text cs-required">

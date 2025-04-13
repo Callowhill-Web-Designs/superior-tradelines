@@ -1,12 +1,13 @@
 ---
 title: "Superior Tradelines | Home"
-description: "Enhance your financial opportunities with Superior Tradelines. Reliable and effective tradeline solutions to improve your financial opportunities."
+description: "Enhance your financial opportunities with Superior Tradelines. Reliable and effective tradeline solutions
+to improve your financial opportunities."
 preloadImg: "/assets/images/train-hero.webp"
 permalink: "/"
-tags: "sitemap" # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
+tags: "sitemap"
 eleventyNavigation:
-  key: Home
-  order: 100
+    key: Home
+    order: 100
 ---
 
 {% extends "layouts/base.html" %} {% block head %}
@@ -14,20 +15,17 @@ eleventyNavigation:
 <link rel="stylesheet" href="/assets/css/critical.css" />
 
 <!-- Script for Netlify Identity -->
-<script
-  defer
-  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-></script>
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script defer>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
         });
-      }
-    });
-  }
+    }
 </script>
 
 <!-- JSON Schema Markup -->
@@ -68,7 +66,6 @@ eleventyNavigation:
   }
 </script>
 
-
 {% endblock %} {% block body %}
 
 <!-- ============================================ -->
@@ -76,235 +73,148 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="hero-1467">
-  <div class="cs-container">
-    <div class="cs-content">
-      <h1 class="cs-title">Premium & Affordable Tradelines Start Here</h1>
-      <p class="cs-text">
-        Our mission is to assist you in unlocking your credit potential. Through purchasing tradelines, we can help you recieve equal credit opportunity by adding positive credit accounts.
-      </p>
-      <a href="/tradelines" class="cs-button-solid">Learn More</a>
-      <div class="cs-reviews" aria-hidden="true">
-        <div class="cs-reviews-flex">
-          <img
-            class="cs-reviews-img"
-            decoding="async"
-            fetchpriority="high"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile1.png"
-            alt="icon"
-            width="48"
-            height="48"
-          />
-          <img
-            class="cs-reviews-img"
-            decoding="async"
-            fetchpriority="high"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile2.png"
-            alt="icon"
-            width="48"
-            height="48"
-          />
-          <img
-            class="cs-reviews-img"
-            decoding="async"
-            fetchpriority="high"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile3.png"
-            alt="icon"
-            width="48"
-            height="48"
-          />
-          <img
-            class="cs-reviews-img"
-            decoding="async"
-            fetchpriority="high"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile4.png"
-            alt="icon"
-            width="48"
-            height="48"
-          />
-          <img
-            class="cs-reviews-img"
-            decoding="async"
-            fetchpriority="high"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile5.png"
-            alt="icon"
-            width="48"
-            height="48"
-          />
-          <span class="cs-reviews-number">+10k</span>
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Premium & Affordable Tradelines Start Here</h1>
+            <p class="cs-text">
+                Our mission is to assist you in unlocking your credit potential. Through
+                purchasing tradelines, we can help you recieve equal credit opportunity
+                by adding positive credit accounts.
+            </p>
+            <a href="/tradelines" class="cs-button-solid">Learn More</a>
+            <div class="cs-reviews" aria-hidden="true">
+                <div class="cs-reviews-flex">
+                    <img class="cs-reviews-img" decoding="async" fetchpriority="high"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile1.png" alt="icon"
+                        width="48" height="48" />
+                    <img class="cs-reviews-img" decoding="async" fetchpriority="high"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile2.png" alt="icon"
+                        width="48" height="48" />
+                    <img class="cs-reviews-img" decoding="async" fetchpriority="high"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile3.png" alt="icon"
+                        width="48" height="48" />
+                    <img class="cs-reviews-img" decoding="async" fetchpriority="high"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile4.png" alt="icon"
+                        width="48" height="48" />
+                    <img class="cs-reviews-img" decoding="async" fetchpriority="high"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile5.png" alt="icon"
+                        width="48" height="48" />
+                    <span class="cs-reviews-number">+10k</span>
+                </div>
+            </div>
+            <div class="cs-stars">
+                <img class="cs-icon" decoding="async" fetchpriority="high"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg" alt="icon" width="16"
+                    height="16" />
+                <img class="cs-icon" decoding="async" fetchpriority="high"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg" alt="icon" width="16"
+                    height="16" />
+                <img class="cs-icon" decoding="async" fetchpriority="high"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg" alt="icon" width="16"
+                    height="16" />
+                <img class="cs-icon" decoding="async" fetchpriority="high"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg" alt="icon" width="16"
+                    height="16" />
+                <img class="cs-icon" decoding="async" fetchpriority="high"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg" alt="icon" width="16"
+                    height="16" />
+            </div>
+            <p class="cs-desc">4.9/5 based on 104 reviews.</p>
         </div>
-      </div>
-      <div class="cs-stars">
-        <img
-          class="cs-icon"
-          decoding="async"
-          fetchpriority="high"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
-          alt="icon"
-          width="16"
-          height="16"
-        />
-        <img
-          class="cs-icon"
-          decoding="async"
-          fetchpriority="high"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
-          alt="icon"
-          width="16"
-          height="16"
-        />
-        <img
-          class="cs-icon"
-          decoding="async"
-          fetchpriority="high"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
-          alt="icon"
-          width="16"
-          height="16"
-        />
-        <img
-          class="cs-icon"
-          decoding="async"
-          fetchpriority="high"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
-          alt="icon"
-          width="16"
-          height="16"
-        />
-        <img
-          class="cs-icon"
-          decoding="async"
-          fetchpriority="high"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
-          alt="icon"
-          width="16"
-          height="16"
-        />
-      </div>
-      <p class="cs-desc">4.9/5 based on 104 reviews.</p>
-    </div>
-    <div class="cs-right">
-      <span class="cs-tag">
-       Secure Tradelines Going Fast
-        <span class="cs-dot" aria-hidden="true"></span>
-      </span>
-      <div class="cs-flex">
-        <h2 class="cs-h3">Get Started Now!</h2>
-        <span class="cs-expires">Send us a message and a expert from our team will contact you.</span>
-      </div>
-      <!--Form-->
-      <form class="cs-form" id="form_69_536cf6c929643_web2" name="Front Page Form" action="https://members.superiortradelines.com/admin/webforms/processform.php" enctype="multipart/form-data" method="post">
-        <label class="cs-label cs-required" for="name">
-          Name
-          <input
-            class="cs-input"
-            required
-            type="text"
-            id="name-1467"
-            name="name"
-            autocomplete="name"
-            placeholder="i.e., John Smith"
-          />
-        </label>
-        <label class="cs-label cs-required" for="phone">
-          Phone
-          <script>
-            window.addEventListener('load', () => {
-                const phoneInput = document.querySelector('#phone_number');
-                phoneInput.addEventListener('keydown', disallowNonNumericInput);
-                phoneInput.addEventListener('keyup', formatToPhone);
-              });
-              
-              const disallowNonNumericInput = (evt) => {
-                if (evt.ctrlKey) { return; }
-                if (evt.key.length > 1) { return; }
-                if (/[0-9.]/.test(evt.key)) { return; }
-                evt.preventDefault();
-              }
-              
-              const formatToPhone = (evt) => {
-                const digits = evt.target.value.replace(/\D/g,'').substring(0,10);
-                const areaCode = digits.substring(0,3);
-                const prefix = digits.substring(3,6);
-                const suffix = digits.substring(6,10);
-              
-                if(digits.length > 6) {evt.target.value = `(${areaCode})-${prefix}-${suffix}`;}
-                else if(digits.length > 3) {evt.target.value = `(${areaCode})-${prefix}`;}
-                else if(digits.length > 0) {evt.target.value = `(${areaCode}-`;}
-              };
-          </script>
-          <input
-            class="cs-input"
-            required
-            type="tel"
-            id="phone_number"
-            name="the_best_number_to_reach_me_is_"
-            autocomplete="tel"
-            placeholder="i.e., (123)-123-1234"
-            maxlength="14"
-          />
-        </label>
-        <label class="cs-label cs-required" for="email">
-          Email
-          <input
-            class="cs-input"
-            required
-            type="email"
-            id="email-1467"
-            name="email"
-            autocomplete="email"
-            placeholder="i.e., john@smith.com"
-          />
-          <input type="hidden" name="form_id" value="69" />
-          <input name="is_rdir" type="hidden" value="redirect" />
-        </label>
-        <label class="cs-label">
-          How did you hear about us?
-          <input
-            class="cs-input"
-            type="text"
-            id="hear-1467"
-            name="heat"
-            autocomplete="off"
-          />
-        </label>
-        <button id="submitBtn" class="cs-button-solid cs-submit">
-          Schedule a Free Consultation
-        </button>
-    </form>
-    <p class="cs-form-text cs-required">
-        Required
-    </p>
-    <p class="cs-disclaimer">
-    <img class="cs-disclaimer-icon" decoding="async" fetchpriority="high" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/lock.svg" alt="icon" width="20" height="20"/>
-    By sumbitting this form, you grant Superior Tradelines LLC permission to contact you via email, phone or SMS.
-    </p>
-    </div>
-  </div>
-  <!-- Background Image, added in CSS as a backgorund image for parallax effect -->
-  <picture class="cs-background">
-    <source
-      media="(max-width: 767px)"
-      srcset="\assets\images\train-hero-m.webp"
-    />
-    <source
-      media="(min-width: 768px) and (max-width: 1023px)"
-      srcset="\assets\images\train-hero-t.webp"
-    />
-    <source
-      media="(min-width: 1024px)"
-      srcset="\assets\images\train-hero.webp"
-    />
-    <img
-      decoding="async"
-      src="\assets\images\train-hero.webp"
-      alt="field"
-      width="1920"
-      height="1200"
-      aria-hidden="true"
-    />
-  </picture>
-</section>
+        <div class="cs-right">
+            <span class="cs-tag">
+                Secure Tradelines Going Fast
+                <span class="cs-dot" aria-hidden="true"></span>
+            </span>
+            <div class="cs-flex">
+                <h2 class="cs-h3">Get Started Now!</h2>
+                <span class="cs-expires">Send us a message and a expert from our team will contact you.</span>
+            </div>
+            <!--Form-->
+            <form class="cs-form" id="form_69_536cf6c929643_web2" name="Front Page Form"
+                action="https://members.superiortradelines.com/admin/webforms/processform.php"
+                enctype="multipart/form-data" method="post">
+                <label class="cs-label cs-required" for="name">
+                    Name
+                    <input class="cs-input" required type="text" id="name-1467" name="name" autocomplete="name"
+                        placeholder="i.e., John Smith" />
+                </label>
+                <label class="cs-label cs-required" for="phone">
+                    Phone
+                    <script>
+                        window.addEventListener("load", () => {
+                            const phoneInput = document.querySelector("#phone_number");
+                            phoneInput.addEventListener("keydown", disallowNonNumericInput);
+                            phoneInput.addEventListener("keyup", formatToPhone);
+                        });
 
+                        const disallowNonNumericInput = (evt) => {
+                            if (evt.ctrlKey) {
+                                return;
+                            }
+                            if (evt.key.length > 1) {
+                                return;
+                            }
+                            if (/[0-9.]/.test(evt.key)) {
+                                return;
+                            }
+                            evt.preventDefault();
+                        };
+
+                        const formatToPhone = (evt) => {
+                            const digits = evt.target.value
+                                .replace(/\D/g, "")
+                                .substring(0, 10);
+                            const areaCode = digits.substring(0, 3);
+                            const prefix = digits.substring(3, 6);
+                            const suffix = digits.substring(6, 10);
+
+                            if (digits.length > 6) {
+                                evt.target.value = `(${areaCode})-${prefix}-${suffix}`;
+                            } else if (digits.length > 3) {
+                                evt.target.value = `(${areaCode})-${prefix}`;
+                            } else if (digits.length > 0) {
+                                evt.target.value = `(${areaCode}-`;
+                            }
+                        };
+                    </script>
+                    <input class="cs-input" required type="tel" id="phone_number" name="the_best_number_to_reach_me_is_"
+                        autocomplete="tel" placeholder="i.e., (123)-123-1234" maxlength="14" />
+                </label>
+                <label class="cs-label cs-required" for="email">
+                    Email
+                    <input class="cs-input" required type="email" id="email-1467" name="email" autocomplete="email"
+                        placeholder="i.e., john@smith.com" />
+                    <input type="hidden" name="form_id" value="69" />
+                    <input name="is_rdir" type="hidden" value="redirect" />
+                </label>
+                <label class="cs-label">
+                    How did you hear about us?
+                    <input class="cs-input" type="text" id="hear-1467" name="heat" autocomplete="off" />
+                </label>
+                <button id="submitBtn" class="cs-button-solid cs-submit">
+                    Schedule a Free Consultation
+                </button>
+            </form>
+            <p class="cs-form-text cs-required">Required</p>
+            <p class="cs-disclaimer">
+                <img class="cs-disclaimer-icon" decoding="async" fetchpriority="high"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/lock.svg" alt="icon" width="20"
+                    height="20" />
+                By sumbitting this form, you grant Superior Tradelines LLC permission to
+                contact you via email, phone or SMS.
+            </p>
+        </div>
+    </div>
+    <!-- Background Image, added in CSS as a backgorund image for parallax effect -->
+    <picture class="cs-background">
+        <source media="(max-width: 767px)" srcset="\assets\images\train-hero-m.webp" />
+        <source media="(min-width: 768px) and (max-width: 1023px)" srcset="\assets\images\train-hero-t.webp" />
+        <source media="(min-width: 1024px)" srcset="\assets\images\train-hero.webp" />
+        <img decoding="async" src="\assets\images\train-hero.webp" alt="field" width="1920" height="1200"
+            aria-hidden="true" />
+    </picture>
+</section>
 
 <!-- ============================================ -->
 <!--                 Side By Side                 -->
@@ -313,56 +223,69 @@ eleventyNavigation:
 <section id="sbs-1443">
     <div class="cs-container">
         <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/woman-on-tablet.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/woman-on-tablet.webp">
-            <img loading="lazy" decoding="async" src="/assets/images/woman-on-tablet.webp" alt="volunteers" width="650" height="600" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="/assets/images/woman-on-tablet.webp" />
+            <source media="(min-width: 601px)" srcset="/assets/images/woman-on-tablet.webp" />
+            <img loading="lazy" decoding="async" src="/assets/images/woman-on-tablet.webp" alt="volunteers" width="650"
+                height="600" aria-hidden="true" />
         </picture>
         <div class="cs-content">
             <span class="cs-topper">Our Mission</span>
             <h2 class="cs-title">Achieve Your Financial Potential</h2>
             <p class="cs-text">
-                At Superior Tradelines, we empower you to achieve your financial goals by helping curate and manage your credit profile. With over 15 years in the industry and a proven track record, we specialize in adding seasoned tradelines to your profile, helping you secure the financial opportunities you deserve.
+                At Superior Tradelines, we empower you to achieve your financial goals
+                by helping curate and manage your credit profile. With over 15 years in
+                the industry and a proven track record, we specialize in adding seasoned
+                tradelines to your profile, helping you secure the financial
+                opportunities you deserve.
             </p>
             <ul class="cs-card-group">
                 <li class="cs-li">
                     <picture class="cs-li-picture">
-                        <img class="cs-li-icon" aria-hidden="true" src="\assets\images\icons8-bank-64.png" decoding="async" alt="icon" width="32" height="32" loading="lazy">
+                        <img class="cs-li-icon" aria-hidden="true" src="\assets\images\icons8-bank-64.png"
+                            decoding="async" alt="icon" width="32" height="32" loading="lazy" />
                     </picture>
                     <div class="cs-flex">
                         <h3 class="cs-h3">Credit Opportunity</h3>
                         <p class="cs-li-text">
-                            If you are looking for options, we have tradlines that can help! We've assisted over 35,000 customers in managing their credit profile and delivering equal credit opportunity.
+                            If you are looking for options, we have tradlines that can help!
+                            We've assisted over 35,000 customers in managing their credit
+                            profile and delivering equal credit opportunity.
                         </p>
                     </div>
                 </li>
                 <li class="cs-li">
                     <picture class="cs-li-picture">
-                        <img class="cs-li-icon" aria-hidden="true" src="\assets\images\icons8-team-64.png" decoding="async" alt="icon" width="32" height="32" loading="lazy">
+                        <img class="cs-li-icon" aria-hidden="true" src="\assets\images\icons8-team-64.png"
+                            decoding="async" alt="icon" width="32" height="32" loading="lazy" />
                     </picture>
                     <div class="cs-flex">
                         <h3 class="cs-h3">Our Expert Team</h3>
                         <p class="cs-li-text">
-                            Superior Tradelines expert team will help advise you through the tradeline process. We have been in business for 15+ years and have over 40 years of combined experience on staff.
+                            Superior Tradelines expert team will help advise you through the
+                            tradeline process. We have been in business for 15+ years and have
+                            over 40 years of combined experience on staff.
                         </p>
                     </div>
                 </li>
                 <li class="cs-li">
                     <picture class="cs-li-picture">
-                        <img class="cs-li-icon" aria-hidden="true" src="\assets\images\icons8-wallet-64.png" decoding="async" alt="icon" width="32" height="32" loading="lazy">
+                        <img class="cs-li-icon" aria-hidden="true" src="\assets\images\icons8-wallet-64.png"
+                            decoding="async" alt="icon" width="32" height="32" loading="lazy" />
                     </picture>
                     <div class="cs-flex">
                         <h3 class="cs-h3">Tradeline Variety</h3>
                         <p class="cs-li-text">
-                            With a wide variety of tradelines, we are able to fill anyone's needs. We've perfected the process of buying and selling tradelines.
+                            With a wide variety of tradelines, we are able to fill anyone's
+                            needs. We've perfected the process of buying and selling
+                            tradelines.
                         </p>
                     </div>
                 </li>
-            </ul>     
+            </ul>
             <a href="/contact" class="cs-button-solid">Learn More</a>
         </div>
     </div>
 </section>
-                                
 
 <!-- ============================================ -->
 <!--                   Services                   -->
@@ -376,59 +299,66 @@ eleventyNavigation:
                 <h2 class="cs-title">How It Works</h2>
             </div>
             <p class="cs-text">
-                Superior Tradelines specializes in credit profile management and enhancement by adding clients as authorized users to established credit accounts, known as tradelines. Ready to enhance your credit profile? Here's how our easy process works.
+                Superior Tradelines specializes in credit profile management and
+                enhancement by adding clients as authorized users to established credit
+                accounts, known as tradelines. Ready to enhance your credit profile?
+                Here's how our easy process works.
+            </p>
         </div>
+
         <ul class="cs-card-group">
             <!-- Replace Anchor tags with divs -->
             <li class="cs-item">
                 <div class="cs-link">
                     <picture class="cs-picture">
-                        <img loading="lazy" decoding="async"
-                            src="/assets/images/construction-book.webp"
-                            alt="cleaner" width="413" height="240" aria-hidden="true">
+                        <img loading="lazy" decoding="async" src="/assets/images/construction-book.webp" alt="cleaner"
+                            width="413" height="240" aria-hidden="true" />
                     </picture>
                     <h3 class="cs-h3">
                         <span class="cs-number">01</span>
                         Free Consultation
                     </h3>
                     <p class="cs-item-text">
-                        Start with a no-obligation consultation where we review your credit report and understand your financial goals. Our experts provide a personalized plan tailored to your needs.
+                        Start with a no-obligation consultation where we review your credit
+                        report and understand your financial goals. Our experts provide a
+                        personalized plan tailored to your needs.
                     </p>
                 </div>
             </li>
             <li class="cs-item">
                 <div class="cs-link">
                     <picture class="cs-picture">
-                        <source media="(max-width: 600px)"
-                            srcset="/assets/images/select-tradelines.webp">
-                        <source media="(min-width: 601px)"
-                            srcset="/assets/images/select-tradelines.webp">
-                        <img loading="lazy" decoding="async"
-                            src="/assets/images/select-tradelines.webp"
-                            alt="cleaner" width="413" height="240" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset="/assets/images/select-tradelines.webp" />
+                        <source media="(min-width: 601px)" srcset="/assets/images/select-tradelines.webp" />
+                        <img loading="lazy" decoding="async" src="/assets/images/select-tradelines.webp" alt="cleaner"
+                            width="413" height="240" aria-hidden="true" />
                     </picture>
                     <h3 class="cs-h3">
                         <span class="cs-number">02</span>
                         Select Tradelines
                     </h3>
                     <p class="cs-item-text">
-                        Based on your goals, we recommend seasoned tradelines that best align with your credit profile. We explain how each tradeline can impact your credit, ensuring complete transparency.
+                        Based on your goals, we recommend seasoned tradelines that best
+                        align with your credit profile. We explain how each tradeline can
+                        impact your credit, ensuring complete transparency.
                     </p>
                 </div>
             </li>
             <li class="cs-item">
                 <div class="cs-link">
                     <picture class="cs-picture">
-                        <img loading="lazy" decoding="async"
-                            src="/assets/images/handshake.webp"
-                            alt="cleaner" width="413" height="240" aria-hidden="true">
+                        <img loading="lazy" decoding="async" src="/assets/images/handshake.webp" alt="cleaner"
+                            width="413" height="240" aria-hidden="true" />
                     </picture>
                     <h3 class="cs-h3">
                         <span class="cs-number">03</span>
                         Tradeline Placement
                     </h3>
                     <p class="cs-item-text">
-                        Once you’ve selected your tradelines, we handle the placement process. You’ll be added as an authorized user to the chosen accounts, and the tradelines will appear on your credit report in as little as 7–15 days.
+                        Once you’ve selected your tradelines, we handle the placement
+                        process. You’ll be added as an authorized user to the chosen
+                        accounts, and the tradelines will appear on your credit report in as
+                        little as 7–15 days.
                     </p>
                 </div>
             </li>
@@ -436,19 +366,20 @@ eleventyNavigation:
                 <div class="cs-link">
                     <picture class="cs-picture">
                         <source media="(max-width: 600px)"
-                            srcset="/assets/images/pexels-anna-nekrashevich-7552568.jpg">
+                            srcset="/assets/images/pexels-anna-nekrashevich-7552568.jpg" />
                         <source media="(min-width: 601px)"
-                            srcset="/assets/images/pexels-anna-nekrashevich-7552568.jpg">
-                        <img loading="lazy" decoding="async"
-                            src="/assets/images/pexels-anna-nekrashevich-7552568.jpg"
-                            alt="cleaner" width="413" height="240" aria-hidden="true">
+                            srcset="/assets/images/pexels-anna-nekrashevich-7552568.jpg" />
+                        <img loading="lazy" decoding="async" src="/assets/images/pexels-anna-nekrashevich-7552568.jpg"
+                            alt="cleaner" width="413" height="240" aria-hidden="true" />
                     </picture>
                     <h3 class="cs-h3">
                         <span class="cs-number">04</span>
                         Financial Empowerment
                     </h3>
                     <p class="cs-item-text">
-                        After the tradelines are added, monitor your improved credit profile. With your enhanced profile, you’ll be better positioned to secure loans, mortgages, and other financial opportunities.
+                        After the tradelines are added, monitor your improved credit
+                        profile. With your enhanced profile, you’ll be better positioned to
+                        secure loans, mortgages, and other financial opportunities.
                     </p>
                 </div>
             </li>
@@ -456,7 +387,7 @@ eleventyNavigation:
         <a href="/contact" class="cs-button-solid">Talk with Our Team</a>
     </div>
 </section>
-                                
+
 <!-- ============================================ -->
 <!--                  Donations                   -->
 <!-- ============================================ -->
@@ -467,7 +398,10 @@ eleventyNavigation:
             <span class="cs-topper">What We Provide</span>
             <h2 class="cs-title">Protected Premium Tradelines</h2>
             <p class="cs-text">
-                At Superior Tradelines, we specialize in helping individuals and businesses unlock their financial potential. With our premium tradeline services, you can enhance your credit profile, improve your financial credibility, and achieve your goals faster. 
+                At Superior Tradelines, we specialize in helping individuals and
+                businesses unlock their financial potential. With our premium tradeline
+                services, you can enhance your credit profile, improve your financial
+                credibility, and achieve your goals faster.
             </p>
             <a href="/about" class="cs-button-solid">More About Us</a>
         </div>
@@ -475,18 +409,22 @@ eleventyNavigation:
             <li class="cs-item">
                 <a href="/contact" class="cs-link" aria-hidden="true">
                     <picture class="cs-picture" aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="/assets/images/pexels-yankrukov-7693718.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/pexels-yankrukov-7693718.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/pexels-yankrukov-7693718.jpg" alt="factory" width="305" height="240">
+                        <source media="(max-width: 600px)" srcset="/assets/images/pexels-yankrukov-7693718.jpg" />
+                        <source media="(min-width: 601px)" srcset="/assets/images/pexels-yankrukov-7693718.jpg" />
+                        <img loading="lazy" decoding="async" src="/assets/images/pexels-yankrukov-7693718.jpg"
+                            alt="factory" width="305" height="240" />
                     </picture>
                     <div class="cs-flex">
                         <h3 class="cs-h3">Verified Seasoned Tradelines</h3>
                         <p class="cs-item-text">
-                            Unlike other vendors, we offer only top-tier, carefully vetted tradelines from seasoned and reliable sources.
+                            Unlike other vendors, we offer only top-tier, carefully vetted
+                            tradelines from seasoned and reliable sources.
                         </p>
                         <a href="/contact" class="cs-card-link">
                             Learn About Score Correction
-                            <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                            <img class="cs-arrow" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon"
+                                width="20" height="20" aria-hidden="true" />
                         </a>
                     </div>
                 </a>
@@ -494,18 +432,23 @@ eleventyNavigation:
             <li class="cs-item">
                 <a href="/tradelines" class="cs-link" aria-hidden="true">
                     <picture class="cs-picture" aria-hidden="true">
-                        <source media="(max-width: 600px)" srcset="/assets/images/pexels-divinetechygirl-1181690.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/pexels-divinetechygirl-1181690.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/pexels-divinetechygirl-1181690.jpg" alt="desk" width="305" height="240">
+                        <source media="(max-width: 600px)" srcset="/assets/images/pexels-divinetechygirl-1181690.jpg" />
+                        <source media="(min-width: 601px)" srcset="/assets/images/pexels-divinetechygirl-1181690.jpg" />
+                        <img loading="lazy" decoding="async" src="/assets/images/pexels-divinetechygirl-1181690.jpg"
+                            alt="desk" width="305" height="240" />
                     </picture>
                     <div class="cs-flex">
                         <h3 class="cs-h3">Custom Tailored for You</h3>
                         <p class="cs-item-text">
-                            Our experts analyze your unique credit situation and recommend tradelines that align with your specific goals to repair and empower your finances.
+                            Our experts analyze your unique credit situation and recommend
+                            tradelines that align with your specific goals to repair and
+                            empower your finances.
                         </p>
                         <a href="/tradelines" class="cs-card-link">
                             Learn About Tradelines
-                            <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                            <img class="cs-arrow" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon"
+                                width="20" height="20" aria-hidden="true" />
                         </a>
                     </div>
                 </a>
@@ -517,7 +460,8 @@ eleventyNavigation:
         <ul class="cs-stats-group">
             <li class="cs-stat">
                 <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/piggybank.svg" alt="icon" width="48" height="48">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/piggybank.svg" alt="icon"
+                        width="48" height="48" />
                 </picture>
                 <div class="cs-info">
                     <span class="cs-stat-number">8M+</span>
@@ -526,7 +470,8 @@ eleventyNavigation:
             </li>
             <li class="cs-stat">
                 <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/hands.svg" alt="icon" width="48" height="48">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/hands.svg" alt="icon"
+                        width="48" height="48" />
                 </picture>
                 <div class="cs-info">
                     <span class="cs-stat-number">35k+</span>
@@ -537,10 +482,10 @@ eleventyNavigation:
     </div>
     <!-- Background Graphic -->
     <picture class="cs-background">
-        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/waves5.svg" alt="waves" >
+        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/waves5.svg" alt="waves" />
     </picture>
 </section>
-                                
+
 <!-- ============================================ -->
 <!--                   Reviews                    -->
 <!-- ============================================ -->
@@ -553,18 +498,27 @@ eleventyNavigation:
                 <h2 class="cs-title">What People Say</h2>
             </div>
             <p class="cs-text">
-                Superior Tradelines has earned a stellar reputation for delivering consistent results and transforming credit profiles. Clients appreciate the transparent process, personalized approach, and exceptional customer service, making it easy to achieve their financial goals.
+                Superior Tradelines has earned a stellar reputation for delivering
+                consistent results and transforming credit profiles. Clients appreciate
+                the transparent process, personalized approach, and exceptional customer
+                service, making it easy to achieve their financial goals.
             </p>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
                 <!--Blue Quote-->
-                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/quote-left-green.svg" decoding="async" alt="quote icon" width="40" height="46">
+                <img class="cs-quote" aria-hidden="true"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/quote-left-green.svg" decoding="async"
+                    alt="quote icon" width="40" height="46" />
                 <p class="cs-item-text">
-                    I definetly recommend this company. Mike was so informative and knowledgeable. This is the only company I’ll use for tradelines.
+                    I definetly recommend this company. Mike was so informative and
+                    knowledgeable. This is the only company I’ll use for tradelines.
+                </p>
+
                 <div class="cs-flex-group">
                     <picture class="cs-picture">
-                        <img class="cs-profile" src="\assets\images\angellar.webp" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                        <img class="cs-profile" src="\assets\images\angellar.webp" decoding="async" alt="profile"
+                            width="50" height="50" aria-hidden="true" />
                     </picture>
                     <span class="cs-name">
                         Angella R.
@@ -574,13 +528,17 @@ eleventyNavigation:
             </li>
             <li class="cs-item">
                 <!--Blue Quote-->
-                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/quote-left-green.svg" decoding="async" alt="quote icon" width="40" height="46">
+                <img class="cs-quote" aria-hidden="true"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/quote-left-green.svg" decoding="async"
+                    alt="quote icon" width="40" height="46" />
                 <p class="cs-item-text">
-                    Superior Tradelines lives up to its name in every way. Kathy, Ella, and their team are truly the best in the business.
+                    Superior Tradelines lives up to its name in every way. Kathy, Ella,
+                    and their team are truly the best in the business.
                 </p>
                 <div class="cs-flex-group">
                     <picture class="cs-picture">
-                        <img class="cs-profile" src="\assets\images\davidc.webp" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                        <img class="cs-profile" src="\assets\images\davidc.webp" decoding="async" alt="profile"
+                            width="50" height="50" aria-hidden="true" />
                     </picture>
                     <span class="cs-name">
                         David C.
@@ -590,13 +548,17 @@ eleventyNavigation:
             </li>
             <li class="cs-item">
                 <!--Blue Quote-->
-                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/quote-left-green.svg" decoding="async" alt="quote icon" width="40" height="46">
+                <img class="cs-quote" aria-hidden="true"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/quote-left-green.svg" decoding="async"
+                    alt="quote icon" width="40" height="46" />
                 <p class="cs-item-text">
-                    Excellent service. Super knowledgeable and efficient. Mike and Kathy are amazing and I love working with them. Thank you all! Great team!!
+                    Excellent service. Super knowledgeable and efficient. Mike and Kathy
+                    are amazing and I love working with them. Thank you all! Great team!!
                 </p>
                 <div class="cs-flex-group">
                     <picture class="cs-picture">
-                        <img class="cs-profile" src="\assets\images\gigis.webp" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                        <img class="cs-profile" src="\assets\images\gigis.webp" decoding="async" alt="profile"
+                            width="50" height="50" aria-hidden="true" />
                     </picture>
                     <span class="cs-name">
                         Gigi S.
@@ -621,39 +583,34 @@ eleventyNavigation:
         </div>
         <ul class="cs-card-group">
             {% if collections.post | length == 0 %}
-                <h1>No Recent Posts</h1>
-            {% else %}
-                {% set atPost = 0 %}
-                {%- for post in collections.post | reverse -%}
-                    {% if atPost < 4 %}
-                        <li class="cs-item">
-                            <picture class="cs-picture" aria-hidden="true">
-                                <img loading="lazy" decoding="async" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" width="795" height="400">
-                            </picture>
-                            <span class="cs-date">{{ post.date | postDate }}</span>
-                            <div class="cs-info">
-                                <h3 class="cs-h3">{{ post.data.title }}</h3>
-                                <p class="cs-item-text">
-                                    {{ post.data.description }}
-                                </p>
-                                <a href="{{ post.url }}" class="cs-link">
-                                    Read More
-                                    <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
-                                </a>
-                            </div>
-                        </li>
-                    {% endif%}
-                    {% set atPost = atPost + 1 %}
-                {%- endfor -%}
-            {% endif %}
+            <h1>No Recent Posts</h1>
+            {% else %} {% set atPost = 0 %} {%- for post in collections.post | reverse
+            -%} {% if atPost < 4 %} <li class="cs-item">
+                <picture class="cs-picture" aria-hidden="true">
+                    <img loading="lazy" decoding="async" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}"
+                        width="795" height="400" />
+                </picture>
+                <span class="cs-date">{{ post.date | postDate }}</span>
+                <div class="cs-info">
+                    <h3 class="cs-h3">{{ post.data.title }}</h3>
+                    <p class="cs-item-text">{{ post.data.description }}</p>
+                    <a href="{{ post.url }}" class="cs-link">
+                        Read More
+                        <img class="cs-arrow" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon"
+                            width="20" height="20" aria-hidden="true" />
+                    </a>
+                </div>
+                </li>
+                {% endif%} {% set atPost = atPost + 1 %} {%- endfor -%} {% endif %}
         </ul>
-        <a href ="/blog" class="cs-button-solid">See More Articles</a>
+        <a href="/blog" class="cs-button-solid">See More Articles</a>
     </div>
     <picture class="cs-background">
-        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/waves5.svg" alt="waves" >
+        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/waves5.svg" alt="waves" />
     </picture>
 </section>
-                                
+
 <!-- ============================================ -->
 <!--                     FAQ                      -->
 <!-- ============================================ -->
@@ -662,10 +619,11 @@ eleventyNavigation:
     <div class="cs-container">
         <picture class="cs-picture">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="\assets\images\pexels-pixabay-210607.jpg">
+            <source media="(max-width: 600px)" srcset="\assets\images\pexels-pixabay-210607.jpg" />
             <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="\assets\images\pexels-pixabay-210607.jpg">
-            <img loading="lazy" decoding="async" src="\assets\images\pexels-pixabay-210607.jpg" alt="body shop" width="522" height="609" aria-hidden="true">
+            <source media="(min-width: 601px)" srcset="\assets\images\pexels-pixabay-210607.jpg" />
+            <img loading="lazy" decoding="async" src="\assets\images\pexels-pixabay-210607.jpg" alt="body shop"
+                width="522" height="609" aria-hidden="true" />
         </picture>
         <div class="cs-content">
             <span class="cs-topper">Asked Questions</span>
@@ -680,7 +638,10 @@ eleventyNavigation:
                     </button>
                     <div class="cs-item-p">
                         <p class="cs-text">
-                            Tradelines typically remain on your credit report for as long as the account is open and in good standing. We ensure 2 reporting cycles. If you are added as an authorized user, the account may stay visible for 2-6 reporting cycles after removal.
+                            Tradelines typically remain on your credit report for as long as
+                            the account is open and in good standing. We ensure 2 reporting
+                            cycles. If you are added as an authorized user, the account may
+                            stay visible for 2-6 reporting cycles after removal.
                         </p>
                     </div>
                 </li>
@@ -704,7 +665,12 @@ eleventyNavigation:
                     </button>
                     <div class="cs-item-p">
                         <p class="cs-text">
-                            Adding a tradeline can potentially boost your credit score by increasing your credit age, reducing your utilization ratio, and adding a positive payment history. However, the impact varies based on your existing credit profile. Superior Tradelines is not a credit repair company and does not advertise this product for the purpose of boosting credit scores.
+                            Adding a tradeline can potentially boost your credit score by
+                            increasing your credit age, reducing your utilization ratio, and
+                            adding a positive payment history. However, the impact varies
+                            based on your existing credit profile. Superior Tradelines is not
+                            a credit repair company and does not advertise this product for
+                            the purpose of boosting credit scores.
                         </p>
                     </div>
                 </li>
@@ -728,11 +694,23 @@ eleventyNavigation:
                     </button>
                     <div class="cs-item-p">
                         <p class="cs-text">
-                            Yes! In 1974, Congress passed a law called the Equal Credit Opportunity Act. The Federal Reserve’s updated Regulation B is really what made tradelines possible. That law and regulation work hand-in-hand. Hang in there! I’ll explain. That regulation provides:
+                            Yes! In 1974, Congress passed a law called the Equal Credit
+                            Opportunity Act. The Federal Reserve’s updated Regulation B is
+                            really what made tradelines possible. That law and regulation work
+                            hand-in-hand. Hang in there! I’ll explain. That regulation
+                            provides:
                         </p>
-                        <img loading="lazy" decoding="async" src="\assets\images\why-tradelines-are-legal.webp" alt="" width="600px" height="80px" aria-hidden="true">
+                        <img loading="lazy" decoding="async" src="\assets\images\why-tradelines-are-legal.webp" alt=""
+                            width="600px" height="80px" aria-hidden="true" />
                         <p class="cs-text">
-                            Basically, if a bank allows a person to add his or her spouse as an authorized user, the bank must allow (i.e., cannot disallow) a person to add someone other than his or her spouse as an authorized user. This could be a family, friend, or complete stranger. So, you can pay to be added as an authorized user. If the account is in good standing, you will inherit that good payment history. We arrange for you to accomplish this method of credit improvement.
+                            Basically, if a bank allows a person to add his or her spouse as
+                            an authorized user, the bank must allow (i.e., cannot disallow) a
+                            person to add someone other than his or her spouse as an
+                            authorized user. This could be a family, friend, or complete
+                            stranger. So, you can pay to be added as an authorized user. If
+                            the account is in good standing, you will inherit that good
+                            payment history. We arrange for you to accomplish this method of
+                            credit improvement.
                         </p>
                     </div>
                 </li>
@@ -768,7 +746,9 @@ eleventyNavigation:
                     </button>
                     <div class="cs-item-p">
                         <p class="cs-text">
-                            Tradelines can strengthen your credit profile, improving your chances, but approval depends on other factors like your income and debt-to-income ratio.
+                            Tradelines can strengthen your credit profile, improving your
+                            chances, but approval depends on other factors like your income
+                            and debt-to-income ratio.
                         </p>
                     </div>
                 </li>
@@ -800,5 +780,5 @@ eleventyNavigation:
         </div>
     </div>
 </section>
-                                               
+
 {% include 'components/cta.html' %} {% endblock %}
