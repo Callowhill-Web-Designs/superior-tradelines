@@ -15,7 +15,7 @@ CShamburgerMenu.addEventListener('click', function() {
 function ariaExpanded() {
     const csUL = document.querySelector('#cs-expanded');
     const csExpanded = csUL.getAttribute('aria-expanded');
-
+    // if the value is false, we set it to true and vice versa
     if (csExpanded === 'false') {
         csUL.setAttribute('aria-expanded', 'true');
     } else {
