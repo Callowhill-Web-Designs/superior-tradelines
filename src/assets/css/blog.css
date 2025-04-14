@@ -234,11 +234,18 @@
     width: 100%;
     overflow: hidden;
     flex: none;
+    transition: box-shadow 0.3s;
+    border-radius: 0.5em;
+  }
+  .recent-articles:hover {
+    box-shadow: 0 0 10px var(--primary);
+  }
+  .recent-articles:hover .feature-h3 {
+    color: var(--primary);
   }
   .recent-articles .blog-mainImage {
     position: relative;
     display: block;
-    border-radius: 0.5em 0.5em 0 0;
     height: clamp(200px, 30vw, 400px);
     width: 100%;
     overflow: hidden;
@@ -253,7 +260,6 @@
   }
   .recent-articles .article-group {
     border: 1px solid #ebebeb;
-    border-radius: 0 0 0.5em 0.5em;
     padding: clamp(30px, 5vw, 50px);
   }
   .recent-articles .blog-author-img {
@@ -346,7 +352,7 @@
     opacity: 1;
   }
 }
-/* Mobile - 1024px */
+/* Tablet - 1024px */
 @media only screen and (min-width: 64rem) {
   .recent-articles .blog-h1 {
     max-width: 31.25rem;

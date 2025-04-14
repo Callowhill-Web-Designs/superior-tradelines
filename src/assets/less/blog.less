@@ -265,11 +265,20 @@
         width: 100%;
         overflow: hidden;
         flex: none;
+        transition: box-shadow .3s;
+        border-radius:(8/16em);
+
+        &:hover {
+            box-shadow: 0 0 10px var(--primary);
+
+            .feature-h3 {
+                color: var(--primary);
+            }      
+        }
 
         .blog-mainImage {
             position: relative;
             display: block;
-            border-radius: (8/16em) (8/16em) 0 0;
             height: clamp(200px, 30vw, 400px);
             width: 100%;
             overflow: hidden;
@@ -286,7 +295,6 @@
 
         .article-group {
             border: 1px solid #ebebeb;
-            border-radius: 0 0 (8/16em) (8/16em);
             padding: clamp(30px, 5vw, 50px);
         }
 
@@ -392,7 +400,7 @@
     }
 }
 
-/* Mobile - 1024px */
+/* Tablet - 1024px */
 @media only screen and (min-width: 64rem) {
     .recent-articles {
         .blog-h1 {
@@ -593,6 +601,7 @@
         display: block;
         max-width: (795/16em);
         width: 100%;
+
         .blog-mainImage {
             position: relative;
             display: block;
