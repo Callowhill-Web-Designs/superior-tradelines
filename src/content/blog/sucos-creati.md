@@ -7,7 +7,6 @@ author: Matias Pintor
 date: 2023-11-28T12:00:00.000Z
 tags:
   - post
-  - featured
 image: /assets/images/blog/hunters-race-mybhn8kaaec-unsplash.jpg
 imageAlt: A man in a suit
 ---
