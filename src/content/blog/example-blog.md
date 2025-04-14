@@ -7,7 +7,6 @@ author: " Matias Pintor"
 date: 2024-11-16T12:00:00.000Z
 tags:
   - post
-  - featured
 image: /assets/images/blog/pexels-mikhail-nilov-6963051.jpg
 imageAlt: A couple looking at their finances.
 ---
