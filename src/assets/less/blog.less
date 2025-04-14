@@ -6,10 +6,16 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+    body,
+    html {
+        overflow-x: visible;
+    }
+
     .blog-container {
         margin: auto;
         max-width: (1120/16em);
         width: 94%;
+        overflow-x: visible;
     }
 
     .blog-link {
@@ -491,7 +497,7 @@
                 display: block;
                 border-radius: (4/16rem);
                 margin: (16/16rem) auto;
-                background: var(--headerColor);
+                background: var(--primary);
                 height: 3px;
                 width: (50/16rem);
             }
@@ -520,9 +526,9 @@
         .blog-featureImage {
             position: relative;
             display: block;
-            border-radius: 50%;
+            border-radius: 10%;
             height: (60/16em);
-            width: (60/16em);
+            width: (90/16em);
             overflow: hidden;
             flex: none;
 
@@ -560,6 +566,8 @@
 @media only screen and (min-width: 64rem) {
     .blog-sidebar {
         max-width: (360/16em);
+        position: sticky;
+        top: 120px; /* 40px below the nav bar */
     }
 }
 
