@@ -10,7 +10,7 @@ date: 2025-05-16T08:29:00.000Z
 tags:
   - post
 image: /assets/images/blog/whylenderslookattradelines.webp
-imageAlt: why lenders look at tradelines
+imageAlt: Why lenders look at tradelines
 ---
 
 
