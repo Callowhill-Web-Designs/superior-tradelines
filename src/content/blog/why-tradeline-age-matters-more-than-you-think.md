@@ -10,6 +10,7 @@ author: Matias Pintor
 date: 2025-05-23T08:31:00.000Z
 tags:
   - post
+  - featured
 image: /assets/images/blog/whytradelineagematters.webp
 imageAlt: Why tradeline age matters.
 ---
