@@ -28,6 +28,9 @@ eleventyNavigation:
     }
 </script>
 
+<!-- Script for Google reCAPTCHA (Maybe remove defer if not working)-->
+ <script defer src="https://www.google.com/recaptcha/api.js?render=6Ld1NmMrAAAAALDF0Zghr7W404Ps0OIMc8VhdfuJ"></script>
+
 <!-- JSON Schema Markup -->
 <script type="application/ld+json">
   {
@@ -187,11 +190,13 @@ eleventyNavigation:
                         placeholder="i.e., john@smith.com" />
                     <input type="hidden" name="form_id" value="69" />
                     <input name="is_rdir" type="hidden" value="redirect" />
+                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
                 </label>
                 <label class="cs-label">
                     How did you hear about us?
                     <input class="cs-input" type="text" id="hear-1467" name="heat" autocomplete="off" />
                 </label>
+                
                 <button id="submitBtn" class="cs-button-solid cs-submit">
                     Schedule a Free Consultation
                 </button>
@@ -247,7 +252,7 @@ eleventyNavigation:
                     <div class="cs-flex">
                         <h3 class="cs-h3">Credit Opportunity</h3>
                         <p class="cs-li-text">
-                            If you are looking for options, we have tradlines that can help!
+                            If you are looking for options, we have tradelines that can help!
                             We've assisted over 35,000 customers in managing their credit
                             profile and delivering equal credit opportunity.
                         </p>
@@ -772,5 +777,24 @@ eleventyNavigation:
         </div>
     </div>
 </section>
+
+
+<!-- reCAPTCHA Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('form_69_536cf6c929643_web2');
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6Ld1NmMrAAAAALDF0Zghr7W404Ps0OIMc8VhdfuJ', {action: 'submit'}).then(function(token) {
+                    document.getElementById('g-recaptcha-response').value = token;
+                    form.submit();
+                });
+            });
+        });
+    }
+});
+</script>
 
 {% include 'components/cta.html' %} {% endblock %}
