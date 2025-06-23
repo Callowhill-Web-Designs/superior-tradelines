@@ -7,7 +7,6 @@ author: Matias Pintor
 date: 2024-12-04T13:55:00.000Z
 tags:
   - post
-  - featured
 image: /assets/images/blog/pexels-shvetsa-4482900.webp
 imageAlt: credit card
 ---

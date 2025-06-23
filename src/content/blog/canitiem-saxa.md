@@ -8,7 +8,6 @@ author: Matias Pintor
 date: 2024-11-23T15:07:00.000Z
 tags:
   - post
-  - featured
 image: /assets/images/blog/creditapp.jpg
 imageAlt: A credit card
 ---

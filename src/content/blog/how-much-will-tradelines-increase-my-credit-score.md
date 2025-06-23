@@ -8,6 +8,7 @@ author: Kate
 date: 2024-12-16T14:18:00.000Z
 tags:
   - post
+  - featured
 image: /assets/images/blog/creditscore.webp
 imageAlt: credit score
 ---
